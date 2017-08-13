@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Spanning tree</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Spanning tree.html'>Spanning tree</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Spanning tree.html">Spanning tree</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p391">
+            <a href="../../problem/391.html" class="pid">P391</a>: <strong>Enumeration of all spanning trees in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G$. 
+            </dd>
+            <dd>Output: 
+            All spanning trees in  $G$. 
+            </dd>
+            <dd>Complexity: 
+             
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Hakimi1961">Hakimi1961</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p1">
+            <a href="../../problem/1.html" class="pid">P1</a>: <strong>Enumeration of all spanning trees in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G=(V,E)$.
+            </dd>
+            <dd>Output: 
+            All spanning trees of $G$.
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            In this paper, 'trees' indicate 'spanning trees'. 
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Minty1965">Minty1965</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p383">
+            <a href="../../problem/383.html" class="pid">P383</a>: <strong>Enumeration of all spanning trees of a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G$. 
+            </dd>
+            <dd>Output: 
+            All spanning trees of $G$. 
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Mayeda1965a">Mayeda1965a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p102">
+            <a href="../../problem/102.html" class="pid">P102</a>: <strong>Enumeration of all spanning trees in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|E|)$ time per spanning tree with $O(|E|)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Read1975">Read1975</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p51">
+            <a href="../../problem/51.html" class="pid">P51</a>: <strong>Enumeration of the $k$ smallest weight spanning trees in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            The $k$ smallest weight spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(k|E|\alpha (|E|,|V|) + |E|\log |E|)$ total time and $O(k + |E|)$ space, $\alpha(\cdot)$ is Tarjan&#39;s inverse of Ackermann&#39;s function.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Gabow1977">Gabow1977</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p52">
+            <a href="../../problem/52.html" class="pid">P52</a>: <strong>Enumeration of all spanning trees in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            The all spanning trees in $G$ in order.
+            </dd>
+            <dd>Complexity: 
+            $O(N|V|)$ total time and $O(N + |E|)$ space, $N$ is the number of spanning trees in $G$.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Gabow1977">Gabow1977</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p67">
+            <a href="../../problem/67.html" class="pid">P67</a>: <strong>Enumeration of all spanning trees in an undirected graph</strong>
+            </dt>
+            <dd>Input: 
+            An undirected graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V| + |E| + |V|N)$ total time and $O(|V| + |E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of spanning trees in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Gabow1978">Gabow1978</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p68">
+            <a href="../../problem/68.html" class="pid">P68</a>: <strong>Enumeration of all spanning trees in a directed graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V| + |E| + |E|N)$ total time and $O(|V| + |E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of spanning trees in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Gabow1978">Gabow1978</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p55">
+            <a href="../../problem/55.html" class="pid">P55</a>: <strong>Enumeration of the $k$ smallest weight spanning trees in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            The $k$ smallest weight spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(k|E| + \min (|V|^2 ,|E|\log \log |V|))$ total time and $O(k + |E|)$ space
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Katoh1981">Katoh1981</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p370">
+            <a href="../../problem/370.html" class="pid">P370</a>: <strong>Enumeration of all spanning trees in an undirected graph</strong>
+            </dt>
+            <dd>Input: 
+            An undirected graph $G$.
+            </dd>
+            <dd>Output: 
+            All spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            They analized Char's enumeration algorithm.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Jayakumar1984">Jayakumar1984</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p53">
+            <a href="../../problem/53.html" class="pid">P53</a>: <strong>Enumeration of the $k$ smallest weight spanning trees in a graph in increasing order</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            The $k$ smallest weight spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|E|\log\log_{(2+|E|/|V|)} n + k^2\sqrt{|E|})$ total time and $O(|E| + k\sqrt{|E|})$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Frederickson1985">Frederickson1985</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p54">
+            <a href="../../problem/54.html" class="pid">P54</a>: <strong>Enumeration of the $k$ smallest weight spanning trees in a planar graph in increasing order</strong>
+            </dt>
+            <dd>Input: 
+            A planar graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            The $k$ smallest weight spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V| + k^2(\log |V|)^2)$ total time and $O(|V| + k(\log |V|)^2)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Frederickson1985">Frederickson1985</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p361">
+            <a href="../../problem/361.html" class="pid">P361</a>: <strong>Enumeration of all undirected minimum spanning trees in an undirected graph</strong>
+            </dt>
+            <dd>Input: 
+            An undirected graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All undirected minimum spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|E|\log \beta(|E|, |V|))$ total time.
+            </dd>
+            <dd>Comment: 
+            $\beta(|E|, |V|) = \min\{i | \log^{(i)}|V| \le |E|/|N|\}$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Gabow1986a">Gabow1986a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p362">
+            <a href="../../problem/362.html" class="pid">P362</a>: <strong>Enumeration of all directed minimum spanning trees in an directed graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All directed minimum spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|\log \beta(|E|, |V|))$ total time.
+            </dd>
+            <dd>Comment: 
+            $\beta(|E|, |V|) = \min\{i | \log^{(i)}|V| \le |E|/|N|\}$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Gabow1986a">Gabow1986a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p73">
+            <a href="../../problem/73.html" class="pid">P73</a>: <strong>Enumeration of all spanning tree in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All spanning tree of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|+|E|+N)$ total time and $O(|V||E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of spanning trees in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Kapoor1991">Kapoor1991</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p74">
+            <a href="../../problem/74.html" class="pid">P74</a>: <strong>Enumeration of all spanning tree in an weighted graph</strong>
+            </dt>
+            <dd>Input: 
+            An weighted graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All spanning tree of $G$ in increasing order of weight.
+            </dd>
+            <dd>Complexity: 
+            $O(N\log |V|+|V||E|)$ total time and $O(N + |V|^2|E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of spanning trees in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Kapoor1991">Kapoor1991</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p75">
+            <a href="../../problem/75.html" class="pid">P75</a>: <strong>Enumeration of all spanning tree in a directed graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All spanning tree of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(N|V|+|V|^3)$ total time and $O(|V|^2)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of spanning trees in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Kapoor1991">Kapoor1991</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p47">
+            <a href="../../problem/47.html" class="pid">P47</a>: <strong>Enumeration of the $k$ best spanning trees in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            The $k$ best spanning trees of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(m\log\beta(|E|, |V|) + k^2)$ total time.
+            </dd>
+            <dd>Comment: 
+            $\beta(|E|, |V|) = \min \{\log^{(i)}|V| \le |E|/|V|\}$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Eppstein1992">Eppstein1992</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p48">
+            <a href="../../problem/48.html" class="pid">P48</a>: <strong>Enumeration of the $k$ best spanning trees in a planar graph</strong>
+            </dt>
+            <dd>Input: 
+            A planar graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            The $k$ best spanning trees of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(n + k^2)$ total time
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Eppstein1992">Eppstein1992</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p88">
+            <a href="../../problem/88.html" class="pid">P88</a>: <strong>Generation of the $k$-th minimum spanning tree in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            The $k$-th minimum spanning tree of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O((|V||E|)^{k-1})$ time.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Mayr1992">Mayr1992</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p110">
+            <a href="../../problem/110.html" class="pid">P110</a>: <strong>Enumeration of all spanning trees</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(N + |V| + |E|)$ total time and $O(|V||E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of spanning trees in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Shioura1995">Shioura1995</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p300">
+            <a href="../../problem/300.html" class="pid">P300</a>: <strong>Enumeration of all spanning trees in a directed graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            INCORRECT: $O(N \log |V| + |V|^2\alpha(V, V) + |V||E|)$
+            </dd>
+            <dd>Comment: 
+            $\alpha$: the inverse Ackermann's function.  [KR2000] gives this result is wrong.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Hariharan1995">Hariharan1995</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p115">
+            <a href="../../problem/115.html" class="pid">P115</a>: <strong>Enumeration of all spanning trees in a directed graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|E|+ND(|V|, |E|))$ total time and $O(|E|+DS(|V|, |E|))$ space.
+            </dd>
+            <dd>Comment: 
+            $D(|V|, |E|)$ and $DS(|V|, |E|)$ are the time and space complexities of the data structure for updating the minimum spanning tree in an undirected graph with $|V|$ vertices and $|E|$ edges. Here $N$ denotes the number of directed spanning trees in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Uno1996">Uno1996</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p15">
+            <a href="../../problem/15.html" class="pid">P15</a>: <strong>Enumeration of all spanning trees in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G=(V,E)$.
+            </dd>
+            <dd>Output: 
+            All spanning trees included in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(N+|V|+|E|)$ total time and $O(|V|+|E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ = number of spanning trees in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Shioura1997">Shioura1997</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p59">
+            <a href="../../problem/59.html" class="pid">P59</a>: <strong>Enumeration of the $k$ smallest weight spanning trees in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            The $k$ smallest weight spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(m \log \log* n + k \min(n, k)^{1/2})$ total time, or a randomized version taking $O(m + k \min(n, k)^{1/2})$ total time.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Eppstein1997">Eppstein1997</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p83">
+            <a href="../../problem/83.html" class="pid">P83</a>: <strong>Enumeration of all spanning trees in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V| + |E| + \tau)$ time and $O(|V| + |E|)$ space (depth first manner) or $O(\tau|V| + |E|)$ space (breadth first manner).
+            </dd>
+            <dd>Comment: 
+            By using breadth first manner, the proposed algorithm can be used in a parallel computer.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Matsui1997">Matsui1997</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p84">
+            <a href="../../problem/84.html" class="pid">P84</a>: <strong>Enumeration of all spanning trees in a graph in non-decreasing order</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All spanning trees in $G$ in non-decreasing order.
+            </dd>
+            <dd>Complexity: 
+            $O(|V| + |E| + \tau)$ time and $O(\tau|V| + |E|)$ space.
+            </dd>
+            <dd>Comment: 
+            Using breadth first manner.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Matsui1997">Matsui1997</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p120">
+            <a href="../../problem/120.html" class="pid">P120</a>: <strong>Enumeration of all directed spanning trees in a directed graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All directed spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|E| \log |V| + |V| + N \log^2 |V|)$ total time and $O(|E| + |V|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of directed spanning trees.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Uno1998a">Uno1998a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p285">
+            <a href="../../problem/285.html" class="pid">P285</a>: <strong>Enumeration of all spanning trees of an weighted graph in order of increasing cost</strong>
+            </dt>
+            <dd>Input: 
+            An weighted graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All spanning trees of $G$ in order of increasing cost.
+            </dd>
+            <dd>Complexity: 
+            $O(N|E|\log |E| + N^2)$ total time and $O(N|E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of spanning trees of $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Sorensen2005">Sorensen2005</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p214">
+            <a href="../../problem/214.html" class="pid">P214</a>: <strong>Enumeration of all the minimum spanning trees in a graph</strong>
+            </dt>
+            <dd>Input: 
+            An weighted graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All the minimum spanning trees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(N|E|\log|V|)$ total time and $O(|E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of the minimum spanning trees in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Yamada2010">Yamada2010</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

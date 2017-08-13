@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 82</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Geometry.html'>Geometry</a>
+                
+                        <ul>
+                            <li><a href='../problems/Geometry/Triangulation.html'>Triangulation</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/82.html" class="pid">P82</a>: Enumeration of all spanning regular triangulations</h2>
+        <dl class="problems">
+            <dd>Input: 
+            $n$ points.
+            </dd>
+            <dd>Output: 
+            All spanning regular triangulations of given points in $(d-1)$-dimensional space.
+            </dd>
+            <dd>Complexity: 
+            $O(dsLP(r, ds)T&#39;)$ time and $O(ds)$ space.
+            </dd>
+            <dd>Comment: 
+            $s$ is the upper bound of the number of simplcies contained in one regular triangulation, $LP(r, ds)$ denotes the time complexity of solving linear programming problem with $ds$ strict inequality constraints in $r$ variables, and $T'$ is the number of regular triangulations.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Masada1996">Masada1996</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

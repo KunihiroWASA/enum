@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 61</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/ZZZ (working).html'>ZZZ (working)</a>
+                
+                        <ul>
+                            <li><a href='../problems/ZZZ (working)/Geometry, Polyhedron.html'>Geometry, Polyhedron</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/61.html" class="pid">P61</a>: Enumeration of all face-defining of a plane</h2>
+        <dl class="problems">
+            <dd>Input: 
+            
+            </dd>
+            <dd>Output: 
+            
+            </dd>
+            <dd>Complexity: 
+            $O(m l(m,n)f)$ total time and $O(p(m, n))$ space.
+            </dd>
+            <dd>Comment: 
+            $f$ is the number of output, and $l(m, n)$ and $p(m, n)$ are time and space complexity needed to solve an LP with $n$ variables and $m$ constraints.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Fukuda1997">Fukuda1997</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

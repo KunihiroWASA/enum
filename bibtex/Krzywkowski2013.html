@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Krzywkowski2013</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@inproceedings{Krzywkowski2013, 
+     series = "Lecture Notes in Computer Science", 
+     address = "Dalian, China", 
+     month = "jun", 
+     volume = "7924", 
+     doi = "10.1007/978-3-642-38756-2_4", 
+     link = "http://link.springer.com/chapter/10.1007/978-3-642-38756-2_4", 
+     year = "2013", 
+     pages = "12--16", 
+     publisher = "Springer Berlin Heidelberg", 
+     keyword = "2-domination,combinatorial bound,domination,exponential algorithm,listing algorithm,minimal 2-dominating set,tree", 
+     author = "Krzywkowski, Marcin", 
+     booktitle = "FAW-AAIM 2013: the 3rd Joint International Conference on Frontiers in Algorithmics and Algorithmic Aspects in Information and Management", 
+     uri = "http://link.springer.com/chapter/10.1007/978-3-642-38756-2_4", 
+     editor = "Fellows, Michael and Tan, Xuehou and Zhu, Binhai", 
+     title = "An algorithm for listing all minimal 2-dominating sets of a tree", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/189.html">189</a> 
+        
+        </p>
+    </body>
+</html>

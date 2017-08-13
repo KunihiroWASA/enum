@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 141</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Hypergraph.html'>Hypergraph</a>
+                
+                        <ul>
+                            <li><a href='../problems/Hypergraph/Transversal.html'>Transversal</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/141.html" class="pid">P141</a>: Enumeration of all minimal transversal in a hypergraph</h2>
+        <dl class="problems">
+            <dd>Input: 
+            A hypergraph $\mathcal{H}\in A(k, r)$.
+            </dd>
+            <dd>Output: 
+            All minimal transversal in $\mathcal{H}$.
+            </dd>
+            <dd>Complexity: 
+            $O(n^{k+r+1}|\mathcal{H}^d|^{r+1})$ total time and $O(N^{r+1})$ total space.
+            </dd>
+            <dd>Comment: 
+            $A(k, r)$ is the class of hyperedges with $(k, r)$-bounded intersections, i.e. in which the intersection of any $k$ distinct hyperedges has size at most $r$.  Minimal transversals of hypergraphs in some restricted classes can be enumerating in polynomial delay and space.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Boros2004">Boros2004</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

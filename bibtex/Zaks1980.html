@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Zaks1980</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Zaks1980, 
+     number = "1", 
+     month = "jan", 
+     volume = "10", 
+     doi = "10.1016/0304-3975(80)90073-0", 
+     link = "http://www.sciencedirect.com/science/article/pii/0304397580900730", 
+     year = "1980", 
+     pages = "63--82", 
+     author = "Zaks, Shmuel", 
+     journal = "Theoretical Computer Science", 
+     issn = "03043975", 
+     uri = "http://www.sciencedirect.com/science/article/pii/0304397580900730", 
+     title = "Lexicographic generation of ordered trees", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/384.html">384</a> 
+        
+        </p>
+    </body>
+</html>

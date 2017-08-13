@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: HeejongSuh2000</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@inproceedings{HeejongSuh2000, 
+     isbn = "0-7695-0912-6", 
+     doi = "10.1109/LCN.2000.891015", 
+     link = "http://ieeexplore.ieee.org/document/891015/", 
+     year = "2000", 
+     pages = "100--107", 
+     publisher = "IEEE Comput. Soc", 
+     author = "{Heejong Suh} and Chang, C.K.", 
+     booktitle = "Proceedings 25th Annual IEEE Conference on Local Computer Networks. LCN 2000", 
+     issn = "07421303", 
+     uri = "http://ieeexplore.ieee.org/document/891015/", 
+     title = "Algorithms for the minimal cutsets enumeration of networks by graph search and branch addition", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/436.html">436</a> 
+        
+        </p>
+    </body>
+</html>

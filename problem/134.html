@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 134</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../problems/Graph/Matching.html'>Matching</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/134.html" class="pid">P134</a>: Enumeration of all $d$-factor in a bipartite graph</h2>
+        <dl class="problems">
+            <dd>Input: 
+            A bipartite graph $G = (U, V, E)$ and any non negative function $d: A \cup B \to \{0, 1, \cdots, |U| + |V|\}$.
+            </dd>
+            <dd>Output: 
+            All $d$-factor in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|E|)$ delay.
+            </dd>
+            <dd>Comment: 
+            A $d$-factor in $G$ is a subgraph $G' = (U, V, X)$ covering all vertices of $G$, whose each vertex $v$ has degree $d(v)$. If for any $v \in U \cup V$, $d(v) = 1$, $G'$ is a perfect matching.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Boros2006">Boros2006</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

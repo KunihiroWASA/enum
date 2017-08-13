@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Geometry / Triangulation</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Geometry.html'>Geometry</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Geometry/Triangulation.html'>Triangulation</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Geometry.html">Geometry</a> / <a href="../../problems/Geometry/Triangulation.html">Triangulation</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p81">
+            <a href="../../problem/81.html" class="pid">P81</a>: <strong>Enumeration of all regular triangulations</strong>
+            </dt>
+            <dd>Input: 
+            $n$ points.
+            </dd>
+            <dd>Output: 
+            All regular triangulations of given points in $(d-1)$-dimensional space.
+            </dd>
+            <dd>Complexity: 
+            $O(dsLP(r, ds)T)$ time and $O(ds)$ space.
+            </dd>
+            <dd>Comment: 
+            $s$ is the upper bound of the number of simplcies contained in one regular triangulation, $LP(r, ds)$ denotes the time complexity of solving linear programming problem with $ds$ strict inequality constraints in $r$ variables, and $T$ is the number of regular triangulations.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Masada1996">Masada1996</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p82">
+            <a href="../../problem/82.html" class="pid">P82</a>: <strong>Enumeration of all spanning regular triangulations</strong>
+            </dt>
+            <dd>Input: 
+            $n$ points.
+            </dd>
+            <dd>Output: 
+            All spanning regular triangulations of given points in $(d-1)$-dimensional space.
+            </dd>
+            <dd>Complexity: 
+            $O(dsLP(r, ds)T&#39;)$ time and $O(ds)$ space.
+            </dd>
+            <dd>Comment: 
+            $s$ is the upper bound of the number of simplcies contained in one regular triangulation, $LP(r, ds)$ denotes the time complexity of solving linear programming problem with $ds$ strict inequality constraints in $r$ variables, and $T'$ is the number of regular triangulations.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Masada1996">Masada1996</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p323">
+            <a href="../../problem/323.html" class="pid">P323</a>: <strong>Enumeration of all triangulations of a point set</strong>
+            </dt>
+            <dd>Input: 
+            A point set $P$.
+            </dd>
+            <dd>Output: 
+            All triangulations of $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(|P|N)$ total time and $O(|P|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Avis1996">Avis1996</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p112">
+            <a href="../../problem/112.html" class="pid">P112</a>: <strong>Enumeration of all triangulations in general dimensions</strong>
+            </dt>
+            <dd>Input: 
+            Points.
+            </dd>
+            <dd>Output: 
+            All triangulations.
+            </dd>
+            <dd>Complexity: 
+            See the paper.
+            </dd>
+            <dd>Comment: 
+            This algorithm uses the enumeration algorithm for maximal independent sets.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Takeuchi">Takeuchi</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p113">
+            <a href="../../problem/113.html" class="pid">P113</a>: <strong>Enumeration of all regular triangulations in general dimensions</strong>
+            </dt>
+            <dd>Input: 
+            Points.
+            </dd>
+            <dd>Output: 
+            All regular triangulations.
+            </dd>
+            <dd>Complexity: 
+            See the paper.
+            </dd>
+            <dd>Comment: 
+            This algorithm uses the enumeration algorithm for maximal independent sets.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Takeuchi">Takeuchi</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p297">
+            <a href="../../problem/297.html" class="pid">P297</a>: <strong>Enumeration of all triangulation paths of a point set</strong>
+            </dt>
+            <dd>Input: 
+            A point set $P$.
+            </dd>
+            <dd>Output: 
+            All triangulation paths of $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(N|P|^3\log |P|)$ time and $O(|P|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Dumitrescu2001">Dumitrescu2001</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p279">
+            <a href="../../problem/279.html" class="pid">P279</a>: <strong>Enumeration of all pseudotriangulations of a finite point set</strong>
+            </dt>
+            <dd>Input: 
+            A point set $S$ of size $n$.
+            </dd>
+            <dd>Output: 
+            All pointed pseudotriangulations of $S$.
+            </dd>
+            <dd>Complexity: 
+            $O(\log n)$ time per solution with linear space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Bereg2005">Bereg2005</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p265">
+            <a href="../../problem/265.html" class="pid">P265</a>: <strong>Enumeration of all pseudotriangulations of a point set</strong>
+            </dt>
+            <dd>Input: 
+            A point set $P$.
+            </dd>
+            <dd>Output: 
+            All pseudotriangulations of $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(n)$ time per pseudotriangulation.
+            </dd>
+            <dd>Comment: 
+            $n$ is the number of points in $P$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Bronnimann2006a">Bronnimann2006a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p171">
+            <a href="../../problem/171.html" class="pid">P171</a>: <strong>Enumeration of all triangulations of a convex polygon of $n$ vertices with numbered</strong>
+            </dt>
+            <dd>Input: 
+            A convex polygon $P$ with $n$ vertices that are numbered.
+            </dd>
+            <dd>Output: 
+            All triangulations of $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ time per triangulation and $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Parvez2009">Parvez2009</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p172">
+            <a href="../../problem/172.html" class="pid">P172</a>: <strong>Enumeration of all triangulations of a convex polygon of $n$ vertices</strong>
+            </dt>
+            <dd>Input: 
+            A convex polygon $P$ with $n$ vertices that are not numbered.
+            </dd>
+            <dd>Output: 
+            All triangulations of $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(n^2)$ time per triangulation and $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Parvez2009">Parvez2009</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

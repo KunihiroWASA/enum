@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Henry2013</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@inproceedings{Henry2013, 
+     series = "Lecture Notes in Computer Science", 
+     address = "Banff, Canada", 
+     month = "oct", 
+     volume = "7736", 
+     doi = "10.1007/978-3-642-36505-8_7", 
+     link = "http://link.springer.com/chapter/10.1007/978-3-642-36505-8_7", 
+     year = "2013", 
+     pages = "103--124", 
+     publisher = "Springer Berlin Heidelberg", 
+     keyword = "cbir,maximal clique enumeration,near sets,nearness measure,pre-class,tolerance near sets,tolerance relation,tolerance space", 
+     author = "Henry, CJ and Ramanna, Sheela", 
+     booktitle = "Transactions on Rough Sets XVI", 
+     uri = "http://link.springer.com/chapter/10.1007/978-3-642-36505-8_7", 
+     editor = "Peters, James F. and Skowron, Andrzej and Ramanna, Sheela and Suraj, Zbigniew and Wang, Xin", 
+     title = "Maximal clique enumeration in Finding Near Neighbourhoods", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/190.html">190</a> 
+        
+        </p>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 66</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Geometry.html'>Geometry</a>
+                
+                        <ul>
+                            <li><a href='../problems/Geometry/Face.html'>Face</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/66.html" class="pid">P66</a>: Enumeration of all arrangements</h2>
+        <dl class="problems">
+            <dd>Input: 
+            An integer $n$ and $\mathcal{J} \subseteq \{+, -\}^n$.
+            </dd>
+            <dd>Output: 
+            The set $\mathcal{F}$ of faces if $\mathcal{J}$ is the set of maximal faces of an oriented matroid
+            </dd>
+            <dd>Complexity: 
+            $O(\max(n^2 |\mathcal{J}|^3, n^3 |\mathcal{J}|^2))$ total time.
+            </dd>
+            <dd>Comment: 
+            Their paper treats a reconstruction of the location vectors of all faces from the graph.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Fukuda1991">Fukuda1991</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

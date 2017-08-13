@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Cohen2006</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@inproceedings{Cohen2006, 
+     zzzdoi = "MY/1182635.1164191", 
+     address = "COEX, Seoul, Korea", 
+     month = "sep", 
+     link = "http://dl.acm.org/citation.cfm?id=1182635.1164191", 
+     year = "2006", 
+     pages = "739--750", 
+     publisher = "VLDB Endowment", 
+     author = "Cohen, Sara and Fadida, Itzhak and Kanza, Yaron and Kimelfeld, Benny and Sagiv, Yehoshua", 
+     booktitle = "VLDB 2006: the 32nd international conference on Very Large Data Bases", 
+     uri = "http://dl.acm.org/citation.cfm?id=1182635.1164191", 
+     editor = "Dayal, Umeshwar and Whang, Khu-Yong and Lomet David and Alonso Gustavo and Lohman Guy and Kersten Martin and K. Cha Sang and Kim Young-Kuk", 
+     title = "Full disjunctions: polynomial-delay iterators in action", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/266.html">266</a> 
+        
+        </p>
+    </body>
+</html>

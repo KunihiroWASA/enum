@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 235</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../problems/Graph/Spanning subgraph.html'>Spanning subgraph</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/235.html" class="pid">P235</a>: Enumeration of all $k$-outconnected minimal spanning graph</h2>
+        <dl class="problems">
+            <dd>Input: 
+            A graph $G = (V, E)$, a vertex $s \in V$, and an integer $k$.
+            </dd>
+            <dd>Output: 
+            All minimal $k$-outconneted from $s$ spanning subgraph of $G$.
+            </dd>
+            <dd>Complexity: 
+            Incremental polynomial time.
+            </dd>
+            <dd>Comment: 
+            A graph is $k$-outconnected from $s$ if it contains $k$ internally-disjoint $st$-paths for every $t \in V$. This complexity holds for both vertex and edge-connectivity.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Nutov2009">Nutov2009</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Dumitrescu2001</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Dumitrescu2001, 
+     number = "1-2", 
+     month = "oct", 
+     volume = "20", 
+     doi = "10.1016/S0925-7721(01)00031-1", 
+     link = "http://linkinghub.elsevier.com/retrieve/pii/S0925772101000311", 
+     year = "2001", 
+     pages = "3--12", 
+     keyword = "combinatorics,constrained delaunay triangulation,discrete geometry,enumeration,reverse search,triangulation,triangulation path", 
+     author = "Dumitrescu, Adrian and G\&#34;{a}rtner, Bernd and Pedroni, Samuele and Welzl, Emo", 
+     journal = "Computational Geometry", 
+     issn = "09257721", 
+     uri = "http://linkinghub.elsevier.com/retrieve/pii/S0925772101000311", 
+     title = "Enumerating triangulation paths", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/297.html">297</a> 
+        
+        </p>
+    </body>
+</html>

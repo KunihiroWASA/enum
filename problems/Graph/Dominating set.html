@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Dominating set</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Dominating set.html'>Dominating set</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Dominating set.html">Dominating set</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p240">
+            <a href="../../problem/240.html" class="pid">P240</a>: <strong>Enumeration of all minimal dominating sets in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All minimal dominating sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(1.7159^{|V|})$ total time.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Fomin2008">Fomin2008</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p228">
+            <a href="../../problem/228.html" class="pid">P228</a>: <strong>Enumeration of $z$ smallest weighted edge dominating sets in a graph</strong>
+            </dt>
+            <dd>Input: 
+            An weighted graph $G = (V, E)$, and positive integers $k$ and $z$. Each edge of $G$ has a positive weight.
+            </dd>
+            <dd>Output: 
+            $z$ smallest weighted edge dominating sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(5.6^{2k}k^4z^2 +4^{2k}k^3z|V|)$ total time.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Wang2009">Wang2009</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p202">
+            <a href="../../problem/202.html" class="pid">P202</a>: <strong>Enumeration of all minimal dominating sets in a line graph</strong>
+            </dt>
+            <dd>Input: 
+            A line graph $G$.
+            </dd>
+            <dd>Output: 
+            All minimal dominating sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(||G||^5N^6)$ total time.
+            </dd>
+            <dd>Comment: 
+            $||G||$ is the size of $G$ and $N$ is the number of minimal dominating sets in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Kante2012">Kante2012</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p203">
+            <a href="../../problem/203.html" class="pid">P203</a>: <strong>Enumeration of all minimal dominating sets in a path graph or $(C_4, C_5, craw)$-free graph</strong>
+            </dt>
+            <dd>Input: 
+            A line graph or $(C_4, C_5, craw)$-free graph $G$.
+            </dd>
+            <dd>Output: 
+            All minimal dominating sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(||G||^2N^3)$ total time.
+            </dd>
+            <dd>Comment: 
+            $||G||$ is the size of $G$ and $N$ is the number of minimal dominating sets in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Kante2012">Kante2012</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p204">
+            <a href="../../problem/204.html" class="pid">P204</a>: <strong>Enumeration of all minimal edge-dominating sets in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G$.
+            </dd>
+            <dd>Output: 
+            All minimal edge-dominating sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(||L(G)||^5N^6)$ total time.
+            </dd>
+            <dd>Comment: 
+            $L(G)$ is the line graph of $G$, $||L(G)||$ is the size of $L(G)$, and $N$ is the number of minimal edge-dominating sets in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Kante2012">Kante2012</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p35">
+            <a href="../../problem/35.html" class="pid">P35</a>: <strong>Enumeration of all minimal dominating sets in an undirected permutation graph</strong>
+            </dt>
+            <dd>Input: 
+            An undirected permutation graph $G=(V, E)$.
+            </dd>
+            <dd>Output: 
+            All minimal dominating sets.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|)$ delay with $O(|V|^8)$ pre-processing.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Kante2013">Kante2013</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p36">
+            <a href="../../problem/36.html" class="pid">P36</a>: <strong>Enumeration of all minimal dominating sets in an undirected interval graph</strong>
+            </dt>
+            <dd>Input: 
+            An undirected interval graph $G=(V, E)$.
+            </dd>
+            <dd>Output: 
+            All minimal dominating sets.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|)$ delay with $O(|V|^3)$ pre-processing.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Kante2013">Kante2013</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p124">
+            <a href="../../problem/124.html" class="pid">P124</a>: <strong>Enumeration of all minimal edge dominating sets in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All minimal edge dominating sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|^6|\mathcal{L}|)$ delay.
+            </dd>
+            <dd>Comment: 
+            $\mathcal{L}$ is the set of already generated solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Golovach2013a">Golovach2013a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p125">
+            <a href="../../problem/125.html" class="pid">P125</a>: <strong>Enumeration of all minimal dominating sets in a line graph</strong>
+            </dt>
+            <dd>Input: 
+            A line graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All minimal dominating sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|^2|E|^2|\mathcal{L}|)$ delay.
+            </dd>
+            <dd>Comment: 
+            $\mathcal{L}$ is the set of already generated solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Golovach2013a">Golovach2013a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p126">
+            <a href="../../problem/126.html" class="pid">P126</a>: <strong>Enumeration of all minimal edge dominating sets in a bipartite graph</strong>
+            </dt>
+            <dd>Input: 
+            A bipartite graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All minimal edge dominating sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|^4|\mathcal{L}|)$ delay.
+            </dd>
+            <dd>Comment: 
+            $\mathcal{L}$ is the set of already generated solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Golovach2013a">Golovach2013a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p127">
+            <a href="../../problem/127.html" class="pid">P127</a>: <strong>Enumeration of all minimal dominating sets in the line graph of a bipartite graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All minimal dominating sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|^2|E||\mathcal{L}|)$ delay.
+            </dd>
+            <dd>Comment: 
+            $\mathcal{L}$ is the set of already generated solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Golovach2013a">Golovach2013a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p128">
+            <a href="../../problem/128.html" class="pid">P128</a>: <strong>Enumeration of all minimal dominating sets in a graph of girth at least 7</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$ of girth at least 7.
+            </dd>
+            <dd>Output: 
+            All minimal dominating sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|^2|E||\mathcal{L}|^2)$ delay.
+            </dd>
+            <dd>Comment: 
+            $\mathcal{L}$ is the set of already generated solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Golovach2013a">Golovach2013a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p189">
+            <a href="../../problem/189.html" class="pid">P189</a>: <strong>Enumeration of all 2-dominating sets in a tree</strong>
+            </dt>
+            <dd>Input: 
+            A tree $T = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All 2-dominating sets of $T$.
+            </dd>
+            <dd>Complexity: 
+            $O(1.3248^n)$ total time.
+            </dd>
+            <dd>Comment: 
+            If a subset $U\subseteq V$ is a 2-dominating set if every vertex $v \in V \setminus U$ has at least two neighbors in $U$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Krzywkowski2013">Krzywkowski2013</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p347">
+            <a href="../../problem/347.html" class="pid">P347</a>: <strong>Enumeration of all minimal dominating sets in a $P_6$-free chordal graph</strong>
+            </dt>
+            <dd>Input: 
+            A $P_6$-free chordal graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All minimal dominating sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            Linear delay with $O(|V|^2)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Kante2014">Kante2014</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p424">
+            <a href="../../problem/424.html" class="pid">P424</a>: <strong>Enumeration of all minimal dominating sets in a chordal bipartite graph</strong>
+            </dt>
+            <dd>Input: 
+            A chordal bipartite graph $G$. 
+            </dd>
+            <dd>Output: 
+            All minimal dominating sets in $G$. 
+            </dd>
+            <dd>Complexity: 
+            $O(n^3m|\mathcal{L}|^2)$ delay and the total running time is $O(n^3m|\mathcal{L}^*|^2)$. 
+            </dd>
+            <dd>Comment: 
+            $n$ is the number vertices in $G$, 
+            $m$ is the number of edges in $G$, 
+            $\mathcal{L}$ is the family of already generated minimal dominating sets, and 
+            $\mathcal{L}^*$ is the family of all minimal dominating sets. 
+        
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Golovach2015">Golovach2015</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

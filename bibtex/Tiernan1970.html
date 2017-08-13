@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Tiernan1970</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Tiernan1970, 
+     number = "12", 
+     month = "dec", 
+     volume = "13", 
+     doi = "10.1145/362814.362819", 
+     link = "http://dl.acm.org/citation.cfm?id=362814.362819 http://portal.acm.org/citation.cfm?doid=362814.362819", 
+     year = "1970", 
+     pages = "722--726", 
+     publisher = "ACM", 
+     keyword = "algorithm,circuit search algorithm,graph theory,path search algorithm,searching", 
+     author = "Tiernan, James C.", 
+     journal = "Communications of the ACM", 
+     issn = "00010782", 
+     uri = "http://dl.acm.org/citation.cfm?id=362814.362819", 
+     title = "An efficient search algorithm to find the elementary circuits of a graph", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/390.html">390</a> 
+        
+        </p>
+    </body>
+</html>

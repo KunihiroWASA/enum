@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / $k$-degenerate subgraph</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/$k$-degenerate subgraph.html'>$k$-degenerate subgraph</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/$k$-degenerate subgraph.html">$k$-degenerate subgraph</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p439">
+            <a href="../../problem/439.html" class="pid">P439</a>: <strong>Enumeration of all maximal $k$-degenerate induced graph in a chordal graph </strong>
+            </dt>
+            <dd>Input: 
+            A chordal graph $G = (V, E)$ and an integer $k$. 
+            </dd>
+            <dd>Output: 
+            All maximal $k$-degenerate induced graphs in $G$. 
+            </dd>
+            <dd>Complexity: 
+            $O(m\cdot \omega(G)$ time per solution with polynomial space, where $\omega(G)$ is the size of a maximum clique.  
+            </dd>
+            <dd>Comment: 
+            The number of maximum cliques in a chordal graph is linear in the size of the graph. 
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Conte2017">Conte2017</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

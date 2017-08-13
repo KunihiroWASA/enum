@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Plane graph</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Plane graph.html'>Plane graph</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Plane graph.html">Plane graph</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p255">
+            <a href="../../problem/255.html" class="pid">P255</a>: <strong>Enumeration of all plane straight-line graphs on a given point set in the plane</strong>
+            </dt>
+            <dd>Input: 
+            A point set $P$ in the plane.
+            </dd>
+            <dd>Output: 
+            All plane straight-line graphs on $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(|P|\log|P|)$ time per solution.
+            </dd>
+            <dd>Comment: 
+            Use gray code.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Aichholzer2007">Aichholzer2007</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p256">
+            <a href="../../problem/256.html" class="pid">P256</a>: <strong>Enumeration of all plane and connected straight-line graphs on a given point set in the plane</strong>
+            </dt>
+            <dd>Input: 
+            A point set $P$ in the plane.
+            </dd>
+            <dd>Output: 
+            All plane and connected straight-line graphs on $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(|P|\log|P|)$ time per solution.
+            </dd>
+            <dd>Comment: 
+            Use gray code.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Aichholzer2007">Aichholzer2007</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p257">
+            <a href="../../problem/257.html" class="pid">P257</a>: <strong>Enumeration of all plane spanning trees on a given point set in the plane</strong>
+            </dt>
+            <dd>Input: 
+            A point set $P$ in the plane.
+            </dd>
+            <dd>Output: 
+            All plane spanning trees on $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(|P|\log|P|)$ time per solution.
+            </dd>
+            <dd>Comment: 
+            Use gray code.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Aichholzer2007">Aichholzer2007</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p17">
+            <a href="../../problem/17.html" class="pid">P17</a>: <strong>Enumeration of all plane graphs</strong>
+            </dt>
+            <dd>Input: 
+            $m$: the maximum number of edges.
+            </dd>
+            <dd>Output: 
+            All connected rooted plane graphs with at most $m$ edges.
+            </dd>
+            <dd>Complexity: 
+            amortized $O(1)$ time per graph with $O(m)$ space.
+            </dd>
+            <dd>Comment: 
+            This algorithm does not outputs the entire graph but the difference from previous one.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Yamanaka2009">Yamanaka2009</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p18">
+            <a href="../../problem/18.html" class="pid">P18</a>: <strong>Enumeration of all plane graphs</strong>
+            </dt>
+            <dd>Input: 
+            $m$: the maximum number of edges.
+            </dd>
+            <dd>Output: 
+            All connected non-rooted plane graphs with at most $m$ edges.
+            </dd>
+            <dd>Complexity: 
+            $O(m^3)$ time per graph with $O(m)$ space.
+            </dd>
+            <dd>Comment: 
+            This algorithm does not outputs the entire graph but the difference from previous one.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Yamanaka2009">Yamanaka2009</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p248">
+            <a href="../../problem/248.html" class="pid">P248</a>: <strong>Enumeration of all plane graphs on a given point set in the plane</strong>
+            </dt>
+            <dd>Input: 
+            A fixed point set $P$.
+            </dd>
+            <dd>Output: 
+            All plane graphs on $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(N)$ total time.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Katoh2009a">Katoh2009a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p249">
+            <a href="../../problem/249.html" class="pid">P249</a>: <strong>Enumeration of all non-crossing spanning connected graphs on a given point set in the plane</strong>
+            </dt>
+            <dd>Input: 
+            A fixed point set $P$.
+            </dd>
+            <dd>Output: 
+            All non-crossing spanning connected graphs on $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(N)$ total time.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Katoh2009a">Katoh2009a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p250">
+            <a href="../../problem/250.html" class="pid">P250</a>: <strong>Enumeration of all non-crossing spanning trees on a given point set in the plane</strong>
+            </dt>
+            <dd>Input: 
+            A fixed point set $P$.
+            </dd>
+            <dd>Output: 
+            All non-crossing spanning trees on $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(N + |P|tri(P))$ total time.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions and $tri(P)$ is the number of triangulations of $P$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Katoh2009a">Katoh2009a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p251">
+            <a href="../../problem/251.html" class="pid">P251</a>: <strong>Enumeration of all non-crossing minimally rigid frameworks on a given point set in the plane</strong>
+            </dt>
+            <dd>Input: 
+            A fixed point set $P$.
+            </dd>
+            <dd>Output: 
+            All non-crossing minimally rigid frameworks on $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(|P|^2N)$ total time.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Katoh2009a">Katoh2009a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p252">
+            <a href="../../problem/252.html" class="pid">P252</a>: <strong>Enumeration of all non-crossing perfect matchings on a given point set in the plane</strong>
+            </dt>
+            <dd>Input: 
+            A fixed point set $P$.
+            </dd>
+            <dd>Output: 
+            All non-crossing perfect matchings on $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(|P|^{3/2}tri(P) + |P|^{5/2}N)$ total time.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions and $tri(P)$ is the number of triangulations of $P$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Katoh2009a">Katoh2009a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p208">
+            <a href="../../problem/208.html" class="pid">P208</a>: <strong>Enumeration of all triconnected rooted plane graphs</strong>
+            </dt>
+            <dd>Input: 
+            Integers $n$ and $g$.
+            </dd>
+            <dd>Output: 
+            All triconnected rooted plane graphs with $n$ vertices, whose each inner face has the length at most $g$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ delay with $O(n)$ space after $O(n)$ time preprocessing.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Zhuang2010">Zhuang2010</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p209">
+            <a href="../../problem/209.html" class="pid">P209</a>: <strong>Enumeration of all triconnected rooted plane graphs</strong>
+            </dt>
+            <dd>Input: 
+            An integer $n$.
+            </dd>
+            <dd>Output: 
+            All triconnected rooted plane graphs with $n$ vertices.
+            </dd>
+            <dd>Complexity: 
+            $O(n^3)$ delay with $O(n)$ space after $O(n)$ time preprocessing.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Zhuang2010">Zhuang2010</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p215">
+            <a href="../../problem/215.html" class="pid">P215</a>: <strong>Enumeration of all biconnected rooted plane graphs</strong>
+            </dt>
+            <dd>Input: 
+            Integers $n$ and $g$.
+            </dd>
+            <dd>Output: 
+            All biconnected rooted plane graphs with exactly $n$ vertices such that each inner face is of length at most $g$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ delay with $O(n)$ space, after an $O(n)$ time preprocessing.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Zhuang2010c">Zhuang2010c</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p216">
+            <a href="../../problem/216.html" class="pid">P216</a>: <strong>Enumeration of all biconnected plane graphs</strong>
+            </dt>
+            <dd>Input: 
+            Integers $n$ and $g$.
+            </dd>
+            <dd>Output: 
+            All biconnected plane graphs with at most $n$ vertices such that each inner face is of length at most $g$.
+            </dd>
+            <dd>Complexity: 
+            $O(n^3)$ time per solution on average with $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Zhuang2010c">Zhuang2010c</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p217">
+            <a href="../../problem/217.html" class="pid">P217</a>: <strong>Enumeration of all biconnected rooted plane graphs</strong>
+            </dt>
+            <dd>Input: 
+            Integers $n$ and $g$.
+            </dd>
+            <dd>Output: 
+            All biconnected rooted plane graphs with at most $n$ vertices such that each inner face is of length at most $g$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ delay with $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Zhuang2010c">Zhuang2010c</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p219">
+            <a href="../../problem/219.html" class="pid">P219</a>: <strong>Enumeration of all rooted plane graphs in $\mathcal{G}_{\text{int}}(n, g) - \mathcal{G}_3(n, g)$</strong>
+            </dt>
+            <dd>Input: 
+            Integers $n$ and $g$.
+            </dd>
+            <dd>Output: 
+            All rooted plane graphs in $\mathcal{G}_{\text{int}}(n, g) - \mathcal{G}_3(n, g)$
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ delay with $O(n)$ space and time preprocessing.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Zhuang2010a">Zhuang2010a</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

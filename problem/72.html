@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 72</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../problems/Graph/Cut.html'>Cut</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/72.html" class="pid">P72</a>: Enumeration of all minimal $a$-$b$ separators in a graph</h2>
+        <dl class="problems">
+            <dd>Input: 
+            An undirected connected simple graph $G = (V, E)$, non-adjacent vertices $a$ and $b$ in $G$.
+            </dd>
+            <dd>Output: 
+            All minimal $a$-$b$ separator of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(R_{ab}|V|^3)$ total time.
+            </dd>
+            <dd>Comment: 
+            $R_{ab}$ is the number of minimal $a$-$b$ separators.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Shen1997">Shen1997</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

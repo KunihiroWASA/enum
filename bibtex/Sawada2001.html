@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Sawada2001</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Sawada2001, 
+     number = "1", 
+     month = "jan", 
+     volume = "31", 
+     doi = "10.1137/S0097539700377037", 
+     link = "http://link.aip.org/link/SMJCAT/v31/i1/p259/s1\&amp;Agg=doi http://epubs.siam.org/doi/abs/10.1137/S0097539700377037", 
+     year = "2001", 
+     pages = "259--268", 
+     keyword = "05-04,1,68r05,68r15,ams subject classifications,bracelet,cat algorithm,chemistry and,forbidden substring,generate,introduction,necklace,pii,s0097539700377037,the fields of combinatorial,the rapid growth in", 
+     author = "Sawada, Joe", 
+     journal = "SIAM Journal on Computing", 
+     issn = "0097-5397", 
+     uri = "http://link.aip.org/link/SMJCAT/v31/i1/p259/s1&amp;Agg=doi", 
+     title = "Generating Bracelets in Constant Amortized Time", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/43.html">43</a> 
+        
+        </p>
+    </body>
+</html>

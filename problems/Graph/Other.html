@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Other</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Other.html'>Other</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Other.html">Other</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p416">
+            <a href="../../problem/416.html" class="pid">P416</a>: <strong>Enumeration of all Hamiltonian centers in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G$. 
+            </dd>
+            <dd>Output: 
+            All Hamiltonian centers in $G$. 
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Yau1967">Yau1967</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p346">
+            <a href="../../problem/346.html" class="pid">P346</a>: <strong>Enumeration of all CA-sets of a directed graph</strong>
+            </dt>
+            <dd>Input: 
+            Directed graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All CA-sets of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|^{2.49+} + \gamma)$.
+            </dd>
+            <dd>Comment: 
+            $\gamma$ is the output size. $S \subset V$ is a \textit{CA-set} if, for each $v \in S$, all ancestor of $v$ belongs to $S$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Kashiwabara1992">Kashiwabara1992</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p253">
+            <a href="../../problem/253.html" class="pid">P253</a>: <strong>Enumeration of all maximal induced subgraphs for (connected) hereditary graph properties</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G$.
+            </dd>
+            <dd>Output: 
+            All maximal induced subgraphs in $\mathcal{P}(G)$.
+            </dd>
+            <dd>Complexity: 
+            See the paper.
+            </dd>
+            <dd>Comment: 
+            $\mathcal{P}$ is a set of subgraphs of $G$ with (connected) hereditary graph properties.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Cohen2008">Cohen2008</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

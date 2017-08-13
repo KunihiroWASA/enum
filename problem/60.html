@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 60</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Geometry.html'>Geometry</a>
+                
+                        <ul>
+                            <li><a href='../problems/Geometry/Spanning tree.html'>Spanning tree</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/60.html" class="pid">P60</a>: Enumeration of the Euclidean $k$ best spanning trees in a plane with $n$ points</h2>
+        <dl class="problems">
+            <dd>Input: 
+            $n$ points in a plane
+            </dd>
+            <dd>Output: 
+            The Euclidean $k$ best spanning trees of the given points.
+            </dd>
+            <dd>Complexity: 
+            $O(n \log n \log k + k \min(k, n)^{1/2})$ total time
+            </dd>
+            <dd>Comment: 
+            An Euclidean spanning tree in a plane is a spanning tree of the complete graph whose vertices are all given points and the weight of an edge equal to the Euclidean distance between the corresponding vertices.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Eppstein1997">Eppstein1997</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

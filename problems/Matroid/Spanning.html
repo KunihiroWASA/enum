@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Matroid / Spanning</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Matroid.html'>Matroid</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Matroid/Spanning.html'>Spanning</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Matroid.html">Matroid</a> / <a href="../../problems/Matroid/Spanning.html">Spanning</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p130">
+            <a href="../../problem/130.html" class="pid">P130</a>: <strong>Enumeration of all minimal spanning and connected subsets in a matroid</strong>
+            </dt>
+            <dd>Input: 
+            A matroid $M$.
+            </dd>
+            <dd>Output: 
+            All minimal spanning and connected subsets in $M$.
+            </dd>
+            <dd>Complexity: 
+            Incremental quasi-polynomial time.
+            </dd>
+            <dd>Comment: 
+            $f(x)$ is a quasi-polynomial if $f(x) \in O(2^{polylog (n)})$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Khachiyan2006a">Khachiyan2006a</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

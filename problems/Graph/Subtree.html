@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Subtree</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Subtree.html'>Subtree</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Subtree.html">Subtree</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p3">
+            <a href="../../problem/3.html" class="pid">P3</a>: <strong>Enumeration of all subtrees in an input tree</strong>
+            </dt>
+            <dd>Input: 
+            A tree $T=(V, E)$.
+            </dd>
+            <dd>Output: 
+            All subtrees included in $T$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|)$ delay and $O(|V|)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Ruskey1981">Ruskey1981</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p373">
+            <a href="../../problem/373.html" class="pid">P373</a>: <strong>Enumeration of all $k$-noded subtrees in a tree</strong>
+            </dt>
+            <dd>Input: 
+            A tree $T$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            All $k$-noded subtrees in $T$.
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Hikita1983">Hikita1983</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p2">
+            <a href="../../problem/2.html" class="pid">P2</a>: <strong>Enumeration of all $k$-subtrees in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G=(V, E)$ and a positive integer $k$.
+            </dd>
+            <dd>Output: 
+            All $k$-subtrees included in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(sk)$ total time, $O(k)$ amortized time per solution, and $O(|E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $s$ = number of $k$-subtrees in $G$, a $k$-subtree means a connected, acyclic, and edge induced subgraph with $k$ vertices.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Ferreira2011">Ferreira2011</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p4">
+            <a href="../../problem/4.html" class="pid">P4</a>: <strong>Enumeration of all $k$-subtrees in an input tree</strong>
+            </dt>
+            <dd>Input: 
+            A tree $T=(V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            All $k$-subtrees included in $T$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ delay and $O(|V|)$ space after $O(|V|)$ time preprocessing.
+            </dd>
+            <dd>Comment: 
+            A $k$-subtree is a connected, acyclic, and edge induced subgraph with $k$ vertices.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Wasa2012b">Wasa2012b</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p199">
+            <a href="../../problem/199.html" class="pid">P199</a>: <strong>Enumeration of all $k$-cardinarity subtrees of a tree with $w$ vertices</strong>
+            </dt>
+            <dd>Input: 
+            An integer $k$ and a tree $T$ with $w$ element, where $k \le w$.
+            </dd>
+            <dd>Output: 
+            All subtrees with $k$ vertices of $T$.
+            </dd>
+            <dd>Complexity: 
+            $O(Nw^5)$ total time.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of ideals.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Wild2013">Wild2013</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p376">
+            <a href="../../problem/376.html" class="pid">P376</a>: <strong>Enumeration of all induced subtrees in a $k$-degenerate graph</strong>
+            </dt>
+            <dd>Input: 
+            A $k$-degenerate graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All induced subtrees in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(k)$ amortized time per solution with $O(|V| + |E|)$ space and preprocessing time.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Wasa2014">Wasa2014</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

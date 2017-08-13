@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Set / Partition</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Set.html'>Set</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Set/Partition.html'>Partition</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Set.html">Set</a> / <a href="../../problems/Set/Partition.html">Partition</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p410">
+            <a href="../../problem/410.html" class="pid">P410</a>: <strong>Enumeration of all paritions in natural order</strong>
+            </dt>
+            <dd>Input: 
+            An integer $n$. 
+            </dd>
+            <dd>Output: 
+            All partitions of $n$ in natural order
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#McKay1970">McKay1970</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p411">
+            <a href="../../problem/411.html" class="pid">P411</a>: <strong>Enumeration of all paritions with restriction</strong>
+            </dt>
+            <dd>Input: 
+            Integers $k$ and $n$. 
+            </dd>
+            <dd>Output: 
+            All partitions of $n$ whose the smallest part is greater than or equal to $k$. 
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#White1970">White1970</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p407">
+            <a href="../../problem/407.html" class="pid">P407</a>: <strong>Enumeration of all $k$-partitions of $n$</strong>
+            </dt>
+            <dd>Input: 
+            Integers $k$ and $n$. 
+            </dd>
+            <dd>Output: 
+            All $k$-partitions of $n$. 
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Narayana1971">Narayana1971</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p396">
+            <a href="../../problem/396.html" class="pid">P396</a>: <strong>Enumeration of all paritions of an integer</strong>
+            </dt>
+            <dd>Input: 
+            An integer $n$.  
+            </dd>
+            <dd>Output: 
+            All paritions of $n$. 
+            </dd>
+            <dd>Complexity: 
+             
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Fenner1980">Fenner1980</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p369">
+            <a href="../../problem/369.html" class="pid">P369</a>: <strong>Enumeration of all partitions of a set</strong>
+            </dt>
+            <dd>Input: 
+            A set $S$.
+            </dd>
+            <dd>Output: 
+            All partitions of $S$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ amortized time per solution.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Semba1984">Semba1984</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p352">
+            <a href="../../problem/352.html" class="pid">P352</a>: <strong>Enumeration of all partions of $n$ into integers of size at most $k$</strong>
+            </dt>
+            <dd>Input: 
+            Integers $n$ and $k$.
+            </dd>
+            <dd>Output: 
+            All partions of $n$ into integers of size at most $k$.
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Savage1989">Savage1989</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p343">
+            <a href="../../problem/343.html" class="pid">P343</a>: <strong>Enumeration of all partitions of a set into a fixed number of blocks</strong>
+            </dt>
+            <dd>Input: 
+            An integer $k$.
+            </dd>
+            <dd>Output: 
+            All partitions of a set into $k$ blocks
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ amortized time per solution.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Ruskey1993">Ruskey1993</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p331">
+            <a href="../../problem/331.html" class="pid">P331</a>: <strong>Enumeration of all partitions of an integer $n$</strong>
+            </dt>
+            <dd>Input: 
+            Three integers $n$, $k$, and $\sigma$.
+            </dd>
+            <dd>Output: 
+            All partitions $P_\sigma(n, k)$ of $n$ into parts of size at most $k$ in which parts are congruent to $1$ modulo $\sigma$.
+            </dd>
+            <dd>Complexity: 
+            $O(N)$ total time. E.g., $P_3(11, 8) = P_3(11, 7) = \left\{ \{7, 4\}, \{7, 1, 1, 1, 1\}, \{4, 4, 1, 1, 1\}, \{4, 1, 1, 1, 1, 1, 1, 1\}, \{1, \dots, 1\}\right\}$.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of partitions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Rasmussen1995">Rasmussen1995</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p332">
+            <a href="../../problem/332.html" class="pid">P332</a>: <strong>Enumeration of all partitions of an integer $n$</strong>
+            </dt>
+            <dd>Input: 
+            Two integers $n$ and $k$.
+            </dd>
+            <dd>Output: 
+            All partitions $D(n, k)$ of $n$ into distinct parts of size at most $k$.
+            </dd>
+            <dd>Complexity: 
+            $O(N)$ total time. E.g., $D(10, 5) = \{\{5, 4, 1\}, \{5, 3, 2\}, \{4, 3, 2, 1\}\}$ and $D(11, 4) = \emptyset$.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of partitions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Rasmussen1995">Rasmussen1995</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p159">
+            <a href="../../problem/159.html" class="pid">P159</a>: <strong>Enumeration of all partition of $\{1, \dots, n\}$ into $k$ non-empty subsets</strong>
+            </dt>
+            <dd>Input: 
+            An integer $k$.
+            </dd>
+            <dd>Output: 
+            All partition of $\{1, \dots, n\}$ into $k$ non-empty subsets.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ time per solution.
+            </dd>
+            <dd>Comment: 
+            The number of such partitions is known as the Stirling number of the second kind.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Kawano2005b">Kawano2005b</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p258">
+            <a href="../../problem/258.html" class="pid">P258</a>: <strong>Enumeration of all integer partitions in (anti-)lexicographical order</strong>
+            </dt>
+            <dd>Input: 
+            An integer $n$.
+            </dd>
+            <dd>Output: 
+            All integer partitions of $n$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ time per solution on average.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Stojmenovic2007">Stojmenovic2007</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Eppstein2010</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@inproceedings{Eppstein2010, 
+     series = "Lecture Notes in Computer Science", 
+     address = "Jeju Island, Korea", 
+     month = "dec", 
+     volume = "6506", 
+     doi = "10.1007/978-3-642-17517-6_36", 
+     link = "http://link.springer.com/chapter/10.1007/978-3-642-17517-6_36", 
+     year = "2010", 
+     pages = "403--414", 
+     publisher = "Springer Berlin Heidelberg", 
+     keyword = "bron,d -degenerate graphs,fixed-parameter tractability,kerbosch algorithm,maximal clique listing algorithms,sparse graphs", 
+     author = "Eppstein, David and L\&#34;{o}ffler, M and Strash, Darren", 
+     booktitle = "ISAAC 2010: the 21st International Symposium on Algorithms and Computation", 
+     uri = "http://link.springer.com/chapter/10.1007/978-3-642-17517-6_36", 
+     editor = "Cheong, Otfried and Chwa, Kyung-Yong and Park, Kunsoo", 
+     title = "Listing all maximal cliques in sparse graphs in near-optimal time", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/210.html">210</a> 
+        
+        </p>
+    </body>
+</html>

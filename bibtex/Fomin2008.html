@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Fomin2008</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Fomin2008, 
+     number = "1", 
+     month = "nov", 
+     volume = "5", 
+     doi = "10.1145/1435375.1435384", 
+     link = "http://dl.acm.org/citation.cfm?id=1435375.1435384", 
+     year = "2008", 
+     pages = "1--17", 
+     publisher = "ACM", 
+     keyword = "Exact exponential algorithms,domatic number,listing algorithms,measure and conquer,minimum dominating set,minimum set cover", 
+     author = "Fomin, Fedor V. and Grandoni, Fabrizio and Pyatkin, Artem V. and Stepanov, Alexey A.", 
+     journal = "ACM Transactions on Algorithms", 
+     issn = "15496325", 
+     uri = "http://dl.acm.org/citation.cfm?id=1435375.1435384", 
+     title = "Combinatorial bounds via measure and conquer", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/240.html">240</a> 
+        
+        </p>
+    </body>
+</html>

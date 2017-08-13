@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / String / Necklace</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/String.html'>String</a>
+                
+                        <ul>
+                            <li><a href='../../problems/String/Necklace.html'>Necklace</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/String.html">String</a> / <a href="../../problems/String/Necklace.html">Necklace</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p401">
+            <a href="../../problem/401.html" class="pid">P401</a>: <strong>Enumeration of all $k$-color necklaces with $n$ beads</strong>
+            </dt>
+            <dd>Input: 
+            Integers $k$ and $n$. 
+            </dd>
+            <dd>Output: 
+            All $k$-color necklaces with $n$ beads
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Fredricksen1978a">Fredricksen1978a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p360">
+            <a href="../../problem/360.html" class="pid">P360</a>: <strong>Enumeration of all necklaces of length $n$ with two colors</strong>
+            </dt>
+            <dd>Input: 
+            An integer $n$.
+            </dd>
+            <dd>Output: 
+            All necklaces of length $n$ with two colors.
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Fredricksen1986b">Fredricksen1986b</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p41">
+            <a href="../../problem/41.html" class="pid">P41</a>: <strong>Enumeration of all $k$-ary necklaces</strong>
+            </dt>
+            <dd>Input: 
+            $n$: a length of a necklace, $k$: a number of alphabet size.
+            </dd>
+            <dd>Output: 
+            All $k$-ary necklaces with length $n$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ amortized per output and $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            A $k$-ary necklace is an equivalence class of k-ary strings under rotation.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Ruskey1992">Ruskey1992</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p328">
+            <a href="../../problem/328.html" class="pid">P328</a>: <strong>Enumeration of all $n$-bit necklaces with fixed density $d$</strong>
+            </dt>
+            <dd>Input: 
+            Two integer $n$ and $d$.
+            </dd>
+            <dd>Output: 
+            All $n$-bit necklaces with fixed density $d$.
+            </dd>
+            <dd>Complexity: 
+            $O(nN)$ total time and $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions. A density of a $n$-bit necklace $T$ is $d$ if $T$ has $d$ ones.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Wang1996">Wang1996</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p42">
+            <a href="../../problem/42.html" class="pid">P42</a>: <strong>Enumeration of all $k$-ary necklaces with fixed density</strong>
+            </dt>
+            <dd>Input: 
+            $n$: a length of a necklace, $k$: a number of alphabet size, $d$: a number of nonzero characters.
+            </dd>
+            <dd>Output: 
+            All $k$-ary necklaces with fixed density $d$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ amortized per output and $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            The set of $3$-ary necklace with $2$-density and $4$-length is $N_3(4,2) = \{0011, 0012, 0021, 0022, 0101, 0102, 0202\}$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Ruskey1999">Ruskey1999</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p303">
+            <a href="../../problem/303.html" class="pid">P303</a>: <strong>Enumeration of all strings of some family</strong>
+            </dt>
+            <dd>Input: 
+            
+            </dd>
+            <dd>Output: 
+            
+            </dd>
+            <dd>Complexity: 
+            Constant amortized time per solution.
+            </dd>
+            <dd>Comment: 
+            This algorithm can list not only all necklaces but also all strings in other some family with CAT.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Cattell2000">Cattell2000</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p293">
+            <a href="../../problem/293.html" class="pid">P293</a>: <strong>Enumeration of all $k$-ary necklaces with fixed content of length $n$</strong>
+            </dt>
+            <dd>Input: 
+            Two integer $k$ and $n$, and a content.
+            </dd>
+            <dd>Output: 
+            All $k$-ary necklaces with fixed content of length $n$.
+            </dd>
+            <dd>Complexity: 
+            Constant amortized time per solution.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Sawada2003a">Sawada2003a</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

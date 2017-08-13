@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Murty1968</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Murty1968, 
+     number = "3", 
+     volume = "16", 
+     doi = "10.1287/opre.16.3.682", 
+     link = "http://pubsonline.informs.org/doi/abs/10.1287/opre.16.3.682", 
+     year = "1968", 
+     pages = "682--687", 
+     author = "Murty, K. G.", 
+     journal = "Operations Research", 
+     issn = "0030-364X", 
+     uri = "http://pubsonline.informs.org/doi/abs/10.1287/opre.16.3.682", 
+     title = "Letter to the Editor--An Algorithm for Ranking All the Assignments in Order of Increasing Cost", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/90.html">90</a> 
+        
+        </p>
+    </body>
+</html>

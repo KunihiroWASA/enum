@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Feedback vertex set</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Feedback vertex set.html'>Feedback vertex set</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Feedback vertex set.html">Feedback vertex set</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p432">
+            <a href="../../problem/432.html" class="pid">P432</a>: <strong>Enumeration of all minimal feedback vertex sets in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G$. 
+            </dd>
+            <dd>Output: 
+            All minimal feedback vertex sets in $G$. 
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Yau1967">Yau1967</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p177">
+            <a href="../../problem/177.html" class="pid">P177</a>: <strong>Enumeration of all feedback vertex sets in a strongly connected directed graph</strong>
+            </dt>
+            <dd>Input: 
+            A strongly connected directed graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            All feedback vertex sets of size $k$ in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|^{k-1}|E|)$ total time and $O(|E|)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Garey1978">Garey1978</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p22">
+            <a href="../../problem/22.html" class="pid">P22</a>: <strong>Enumeration of all minimal feedback vertex sets in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G=(V,E)$.
+            </dd>
+            <dd>Output: 
+            All minimal feedback vertex sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V||E|(|V|+|E|))$ time delay.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Schwikowski2002">Schwikowski2002</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p23">
+            <a href="../../problem/23.html" class="pid">P23</a>: <strong>Enumeration of all minimal feedback vertex sets in a directed graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed graph $G=(V,E)$.
+            </dd>
+            <dd>Output: 
+            All minimal feedback vertex sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|^2(|V|+|E|))$ time delay.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Schwikowski2002">Schwikowski2002</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

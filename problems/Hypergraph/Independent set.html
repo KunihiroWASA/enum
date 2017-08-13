@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Hypergraph / Independent set</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Hypergraph.html'>Hypergraph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Hypergraph/Independent set.html'>Independent set</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Hypergraph.html">Hypergraph</a> / <a href="../../problems/Hypergraph/Independent set.html">Independent set</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p299">
+            <a href="../../problem/299.html" class="pid">P299</a>: <strong>Enumeration of all maximal independent set of a hypergraph of bounded dimension</strong>
+            </dt>
+            <dd>Input: 
+            A hypergraph $H$ of bounded dimension.
+            </dd>
+            <dd>Output: 
+            All maximal independent set of a hypergraph of bounded dimension. 
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            The proposed algorithm runs in parallel.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Boros2000a">Boros2000a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p139">
+            <a href="../../problem/139.html" class="pid">P139</a>: <strong>Enumeration of all maximal independent sets in a $c$-conformal hypergraph</strong>
+            </dt>
+            <dd>Input: 
+            A $c$-conformal hypergraph $\mathcal{H} \in A(k, r)$, where $c \le$ constant and $k + r \le c$.
+            </dd>
+            <dd>Output: 
+            All maximal independent sets in $\mathcal{H}$.
+            </dd>
+            <dd>Complexity: 
+            Incremental polynomial time.
+            </dd>
+            <dd>Comment: 
+            $A(k, r)$ is the class of hyperedges with $(k, r)$-bounded intersections, i.e. in which the intersection of any $k$ distinct hyperedges has size at most $r$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Boros2004">Boros2004</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p140">
+            <a href="../../problem/140.html" class="pid">P140</a>: <strong>Enumeration of all maximal independent sets in a hypergraph of bounded intersections</strong>
+            </dt>
+            <dd>Input: 
+            A hypergraph $\mathcal{H} \in A(k, r)$, where $k + r \le$ constant.
+            </dd>
+            <dd>Output: 
+            All maximal independent sets in $\mathcal{H}$.
+            </dd>
+            <dd>Complexity: 
+            Incremental polynomial time with polynomial space.
+            </dd>
+            <dd>Comment: 
+            $A(k, r)$ is the class of hyperedges with $(k, r)$-bounded intersections, i.e. in which the intersection of any $k$ distinct hyperedges has size at most $r$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Boros2004">Boros2004</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

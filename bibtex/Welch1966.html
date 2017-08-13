@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Welch1966</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Welch1966, 
+     number = "2", 
+     month = "apr", 
+     volume = "13", 
+     doi = "10.1145/321328.321331", 
+     link = "http://portal.acm.org/citation.cfm?doid=321328.321331", 
+     year = "1966", 
+     pages = "205--210", 
+     author = "Welch, John T.", 
+     journal = "Journal of the ACM", 
+     issn = "00045411", 
+     uri = "http://portal.acm.org/citation.cfm?doid=321328.321331", 
+     title = "A Mechanical Analysis of the Cyclic Structure of Undirected Linear Graphs", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/421.html">421</a> 
+        
+        </p>
+    </body>
+</html>

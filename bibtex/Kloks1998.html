@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Kloks1998</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Kloks1998, 
+     number = "3", 
+     month = "jun", 
+     volume = "27", 
+     doi = "10.1137/S009753979427087X", 
+     link = "http://epubs.siam.org/doi/abs/10.1137/S009753979427087X", 
+     year = "1998", 
+     pages = "605--613", 
+     keyword = "05c85,1,68r10,algorithm,ams subject classifications,given a graph,good pair,graph,in listing certain sub-,introduction,listing algorithm,minimal pair,minimal separator,one is often interested,pii,s009753979427087x", 
+     author = "Kloks, T. and Kratsch, D.", 
+     journal = "SIAM Journal on Computing", 
+     issn = "0097-5397", 
+     uri = "http://epubs.siam.org/doi/abs/10.1137/S009753979427087X", 
+     title = "Listing All Minimal Separators of a Graph", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/315.html">315</a> 
+        
+        </p>
+    </body>
+</html>

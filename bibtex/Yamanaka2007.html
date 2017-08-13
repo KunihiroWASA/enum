@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Yamanaka2007</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Yamanaka2007, 
+     number = "5", 
+     volume = "E90-A", 
+     doi = "10.1093/ietfec/e90-a.5.888", 
+     link = "http://search.ieice.org/bin/summary.php?id=e90-a_5_888\&amp;category=A\&amp;year=2007\&amp;lang=E\&amp;abst=", 
+     year = "2007", 
+     pages = "888--895", 
+     keyword = "Algorithm,Generation,Integer partition,The family tree", 
+     author = "Yamanaka, Katsuhisa and Kawano, Shin-ichiro and Kikuchi, Yosuke and Nakano, Shin-ichi", 
+     journal = "IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences", 
+     issn = "09168508", 
+     uri = "http://search.ieice.org/bin/summary.php?id=e90-a_5_888&amp;category=A&amp;year=2007&amp;lang=E&amp;abst=", 
+     title = "Constant time generation of integer partitions", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/164.html">164</a> 
+        
+        </p>
+    </body>
+</html>

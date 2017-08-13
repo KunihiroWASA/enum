@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Matroid / Subset</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Matroid.html'>Matroid</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Matroid/Subset.html'>Subset</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Matroid.html">Matroid</a> / <a href="../../problems/Matroid/Subset.html">Subset</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p137">
+            <a href="../../problem/137.html" class="pid">P137</a>: <strong>Enumeration of all maximal subset</strong>
+            </dt>
+            <dd>Input: 
+            A binary matroid $M$ on ground set $S$ and $B = \{b_1, b_2\} \subseteq S$.
+            </dd>
+            <dd>Output: 
+            All maximal subsets $X$ of $A := S \setminus B$ that span neither $b_1$ nor $b_2$.
+            </dd>
+            <dd>Complexity: 
+            Incremental polynomial time.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Khachiyan2008a">Khachiyan2008a</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Ordering</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Ordering.html'>Ordering</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Ordering.html">Ordering</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p78">
+            <a href="../../problem/78.html" class="pid">P78</a>: <strong>Enumeration of all topological sortings of a directed graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed graph $G =(V, E)$.
+            </dd>
+            <dd>Output: 
+            All topological sortings of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V| + |E|)$ time per sorting and $O(|V| + |E|)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Knuth1974">Knuth1974</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p385">
+            <a href="../../problem/385.html" class="pid">P385</a>: <strong>Enumeration of all topological sortings of a given set in lexicographically</strong>
+            </dt>
+            <dd>Input: 
+            An $n$-element set $S$. 
+            </dd>
+            <dd>Output: 
+            All topological sortings of $S$ in lexicographically.
+            </dd>
+            <dd>Complexity: 
+            $O(m)$ time per solution(?). 
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Knuth1979">Knuth1979</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p377">
+            <a href="../../problem/377.html" class="pid">P377</a>: <strong>Enumeration of all topological sortings of a po set</strong>
+            </dt>
+            <dd>Input: 
+            A partial order set $P$.
+            </dd>
+            <dd>Output: 
+            All topological sortings of $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(|P|)$ time per solution.
+            </dd>
+            <dd>Comment: 
+            $|P|$ is the number of objects in $P$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Varol1981">Varol1981</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p348">
+            <a href="../../problem/348.html" class="pid">P348</a>: <strong>Enumeration of all topological sortings in a directed acyclic graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed graph $G$.
+            </dd>
+            <dd>Output: 
+            All topological sortings in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ amortized time per solution with $O(|G|)$.
+            </dd>
+            <dd>Comment: 
+            Linear extensions correspond to topological sortings.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Pruesse1991a">Pruesse1991a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p345">
+            <a href="../../problem/345.html" class="pid">P345</a>: <strong>Enumeration of all topological sortings</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G$.
+            </dd>
+            <dd>Output: 
+            All topological sortings in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ amortized time per solution.
+            </dd>
+            <dd>Comment: 
+            A topological sorting is also known as a linear extension.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Ruskey1992a">Ruskey1992a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p101">
+            <a href="../../problem/101.html" class="pid">P101</a>: <strong>Enumeration of all topological sortings</strong>
+            </dt>
+            <dd>Input: 
+            A directed acyclic graph $D$.
+            </dd>
+            <dd>Output: 
+            All topological sortings $D$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ amortized time per topological sorting and $O(|V|)$ space in addition to the space used for $D$.
+            </dd>
+            <dd>Comment: 
+            Linear sortings correspond to topological sortings.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Pruesse1994">Pruesse1994</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p330">
+            <a href="../../problem/330.html" class="pid">P330</a>: <strong>Enumeration of all linear extensions of a given poset</strong>
+            </dt>
+            <dd>Input: 
+            A poset $P$.
+            </dd>
+            <dd>Output: 
+            All linear extensions of $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ time per solution.
+            </dd>
+            <dd>Comment: 
+            Their algorithm is a loop-free algorithm.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Canfield1995">Canfield1995</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p325">
+            <a href="../../problem/325.html" class="pid">P325</a>: <strong>Enumeration of all topological sortings of an acyclic directed graph</strong>
+            </dt>
+            <dd>Input: 
+            An acyclic directed graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All topological sortings of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|N)$ total time and $O(|V||E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Avis1996">Avis1996</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p290">
+            <a href="../../problem/290.html" class="pid">P290</a>: <strong>Enumeration of all perfect elimination orderings</strong>
+            </dt>
+            <dd>Input: 
+            A chordal graph $G$.
+            </dd>
+            <dd>Output: 
+            All perfect elimination orderings of $G$.
+            </dd>
+            <dd>Complexity: 
+            Constant amortized time per solution.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Chandran2003">Chandran2003</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p294">
+            <a href="../../problem/294.html" class="pid">P294</a>: <strong>Enumeration of all forest extensions of a partially ordered set</strong>
+            </dt>
+            <dd>Input: 
+            A partially ordered set $P$.
+            </dd>
+            <dd>Output: 
+            All forest extensions of $P$.
+            </dd>
+            <dd>Complexity: 
+            $O(|E|^2)$ delay and $O(|E||R|)$ space.
+            </dd>
+            <dd>Comment: 
+            $E$ is the set of elements. $R$ is the binary relation on $E$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Szwarcfiter2003b">Szwarcfiter2003b</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p39">
+            <a href="../../problem/39.html" class="pid">P39</a>: <strong>Enumeration of all topological sortings of a directed acyclic graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed acyclic graph $D$.
+            </dd>
+            <dd>Output: 
+            All topological sortings $D$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ delay per topological sorting.
+            </dd>
+            <dd>Comment: 
+            Linear extensions correspond to topological sortings.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Ono2005">Ono2005</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p175">
+            <a href="../../problem/175.html" class="pid">P175</a>: <strong>Enumeration of all realizer of a triangulated planar graph</strong>
+            </dt>
+            <dd>Input: 
+            A triangulated planar graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All realizer of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|)$ time per realizer.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Yamanaka2006">Yamanaka2006</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p241">
+            <a href="../../problem/241.html" class="pid">P241</a>: <strong>Enumeration of all perfect elimination orderings of a chordal graph</strong>
+            </dt>
+            <dd>Input: 
+            A chordal graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All perfect elimination orderings of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ time per solution on average with $O(|V|^2)$ space and $O(|V|^3)$ with $O(|V|^2)$ space pre-computation.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Matsui2008">Matsui2008</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p38">
+            <a href="../../problem/38.html" class="pid">P38</a>: <strong>Enumeration of all perfect sequences in a chordal graph</strong>
+            </dt>
+            <dd>Input: 
+            A chordal graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All perfect sequences of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ time per graph with $O(|V|^2)$ space with $O(|V|^3)$ time and $O(|V|^2)$ space pre-computation.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Matsui2010">Matsui2010</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

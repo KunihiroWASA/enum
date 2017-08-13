@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 176</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Hypergraph.html'>Hypergraph</a>
+                
+                        <ul>
+                            <li><a href='../problems/Hypergraph/Acyclic subhypergraph.html'>Acyclic subhypergraph</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/176.html" class="pid">P176</a>: Enumeration of all Berge acyclic subhypergraphs in a hypergraph</h2>
+        <dl class="problems">
+            <dd>Input: 
+            A hypergraph $\mathcal{H}$.
+            </dd>
+            <dd>Output: 
+            All Berge acyclic subhypergraphs in $\mathcal{H}$.
+            </dd>
+            <dd>Complexity: 
+            $O(rd\tau(m))$ time per subhypergraph.
+            </dd>
+            <dd>Comment: 
+            $r$ and $d$ are the rank and the degree of $\mathcal{H}$ and $\tau(m) = O((\log\log m)^2 / \log \log \log (m))$.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Wasa2013">Wasa2013</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

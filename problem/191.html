@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 191</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../problems/Graph/Bubble.html'>Bubble</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/191.html" class="pid">P191</a>: Enumeration of all $(s, t, \alpha_1, \alpha_2)$-bubble in a directed graph</h2>
+        <dl class="problems">
+            <dd>Input: 
+            A directed graph $G = (V, E)$, source vertex $s$, and two upper bounds $\alpha_1$ and $\alpha_2$.
+            </dd>
+            <dd>Output: 
+            All $(s, t, \alpha_1, \alpha_2)$-bubble in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|(|E|+|V|\log |V|))$ delay.
+            </dd>
+            <dd>Comment: 
+            A pair of two vertex-disjoint $(s, t)$-paths $p_1$ and $p_2$ is $(s, t, \alpha_1, \alpha_2)$-bubble in $G$, if $|p_1| \le \alpha_1$ and $|p_2| \le \alpha_2$.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Sacomoto2013b">Sacomoto2013b</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

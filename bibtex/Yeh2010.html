@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Yeh2010</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Yeh2010, 
+     isbn = "0045300992", 
+     number = "3", 
+     volume = "56", 
+     doi = "10.1007/s00453-009-9284-5", 
+     link = "http://link.springer.com/article/10.1007/s00453-009-9284-5", 
+     year = "2010", 
+     pages = "297--312", 
+     keyword = "Algorithms,Enumeration,Graphs,Maximum flows,Minimum cuts,Suboptimal cuts", 
+     author = "Yeh, Li Pu and Wang, Biing Feng and Su, Hsin Hao", 
+     journal = "Algorithmica", 
+     issn = "01784617", 
+     uri = "http://link.springer.com/article/10.1007/s00453-009-9284-5", 
+     title = "Efficient algorithms for the problems of enumerating cuts by non-decreasing weights", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/186.html">186</a> 
+        
+        <a href="../problem/187.html">187</a> 
+        
+        </p>
+    </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Matching</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Matching.html'>Matching</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Matching.html">Matching</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p57">
+            <a href="../../problem/57.html" class="pid">P57</a>: <strong>Enumeration of the $k$ best perfect matchings of a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            The $k$ best perfect matchings of $G$ in order.
+            </dd>
+            <dd>Complexity: 
+            $O(k|V|^3)$ total time.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Chegireddy1987">Chegireddy1987</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p69">
+            <a href="../../problem/69.html" class="pid">P69</a>: <strong>Enumeration of all stable marriage</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All stable marriage of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|)$ time per solution and $O(|V|^2)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Gusfield1989">Gusfield1989</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p63">
+            <a href="../../problem/63.html" class="pid">P63</a>: <strong>Enumeration of all minimum cost perfect matchings in an weighted bipartite graph</strong>
+            </dt>
+            <dd>Input: 
+            An weighted bipartite graph $B = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All minimum cost perfect matchings in $B$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|(|V| + |E|))$ time per solution and $O(|V| + |E|)$ space
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Fukuda1992">Fukuda1992</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p64">
+            <a href="../../problem/64.html" class="pid">P64</a>: <strong>Enumeration of all perfect matchings in a bipartite graph</strong>
+            </dt>
+            <dd>Input: 
+            A bipartite graph $B = (U, V, E)$, where $|U| = |V|$.
+            </dd>
+            <dd>Output: 
+            All perfect matchings in $B$.
+            </dd>
+            <dd>Complexity: 
+            $O(c(|V| + |E|))$ total time and $O(|V| + |E|)$ space, after $O(n^{2.5})$ preprocessing time.
+            </dd>
+            <dd>Comment: 
+            $c$ is the number of solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Fukuda1994">Fukuda1994</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p85">
+            <a href="../../problem/85.html" class="pid">P85</a>: <strong>Enumeration of the $k$ best perfect matchings of a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            The $k$ best perfect matchings of $G$ in decreasing order.
+            </dd>
+            <dd>Complexity: 
+            $O(k|V|^3)$ total time with $O(k|V|^2)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Matsui1994">Matsui1994</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p32">
+            <a href="../../problem/32.html" class="pid">P32</a>: <strong>Enumeration of all perfect, maximum, and maximal matchings in bipartite graphs</strong>
+            </dt>
+            <dd>Input: 
+            A bipartite graph $B=(V, E)$.
+            </dd>
+            <dd>Output: 
+            All perfect, maximum, and maximal matching in $B$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|)$ time per matching.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Uno1997">Uno1997</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p116">
+            <a href="../../problem/116.html" class="pid">P116</a>: <strong>Enumeration of all maximal matchings in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All maximal matchings in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V| + |E| + \Delta N)$ total time and $O(|V| + |E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions and $\Delta$ is the maximum degree in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Uno2001">Uno2001</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p132">
+            <a href="../../problem/132.html" class="pid">P132</a>: <strong>Enumeration of all minimal blocker in a bipartite graph</strong>
+            </dt>
+            <dd>Input: 
+            A bipartite graph $G = (U, V, E)$.
+            </dd>
+            <dd>Output: 
+            All minimal blocker in $G$.
+            </dd>
+            <dd>Complexity: 
+            Polynomial delay and space.
+            </dd>
+            <dd>Comment: 
+            A \textit{blocker} of $G$ is an edge subset $X$ of $E$ such that $G' = (U, V, E \setminus X)$ has no perfect matching.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Boros2006">Boros2006</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p133">
+            <a href="../../problem/133.html" class="pid">P133</a>: <strong>Enumeration of all basic perfect 2-matchings in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All basic perfect 2-matchings in $G$.
+            </dd>
+            <dd>Complexity: 
+            Incremental polynomial delay.
+            </dd>
+            <dd>Comment: 
+            A \textit{basic 2-matching} of $G$ is a subset of edges that cover the vertices with vertex-disjoint edges and vertex-disjoint odd cycles.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Boros2006">Boros2006</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p134">
+            <a href="../../problem/134.html" class="pid">P134</a>: <strong>Enumeration of all $d$-factor in a bipartite graph</strong>
+            </dt>
+            <dd>Input: 
+            A bipartite graph $G = (U, V, E)$ and any non negative function $d: A \cup B \to \{0, 1, \cdots, |U| + |V|\}$.
+            </dd>
+            <dd>Output: 
+            All $d$-factor in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|E|)$ delay.
+            </dd>
+            <dd>Comment: 
+            A $d$-factor in $G$ is a subgraph $G' = (U, V, X)$ covering all vertices of $G$, whose each vertex $v$ has degree $d(v)$. If for any $v \in U \cup V$, $d(v) = 1$, $G'$ is a perfect matching.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Boros2006">Boros2006</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p423">
+            <a href="../../problem/423.html" class="pid">P423</a>: <strong>Enumeration of all maximal induced matchings in a triangle-free graph</strong>
+            </dt>
+            <dd>Input: 
+            A triangle-free graph $G$. 
+            </dd>
+            <dd>Output: 
+            All maximal induced matchings in $G$. 
+            </dd>
+            <dd>Complexity: 
+            $O(1.4423^n)$ total time with polynomial delay. 
+            </dd>
+            <dd>Comment: 
+            $n$ is the number of vertices in $G$. 
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Basavaraju2014">Basavaraju2014</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

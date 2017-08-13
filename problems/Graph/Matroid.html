@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Matroid</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Matroid.html'>Matroid</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Matroid.html">Matroid</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p117">
+            <a href="../../problem/117.html" class="pid">P117</a>: <strong>Enumeration of all bases of a graphic matroid in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All bases of a graphic matroid in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V| + |E| + N)$ total time and $O(|V| + |E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions.  If $G$ is connected, any base is a spanning tree.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Uno1998">Uno1998</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p118">
+            <a href="../../problem/118.html" class="pid">P118</a>: <strong>Enumeration of all bases of a linear matroid in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All bases of a linear matroid in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|)$ time per solution and $O(|V|^2|E|)$ preprocessing after time.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Uno1998">Uno1998</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p119">
+            <a href="../../problem/119.html" class="pid">P119</a>: <strong>Enumeration of all bases of a matching matroid in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All bases of a matching matroid in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V| + |E|)$ time per solution.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Uno1998">Uno1998</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

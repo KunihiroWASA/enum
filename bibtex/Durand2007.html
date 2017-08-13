@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Durand2007</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Durand2007, 
+     arxivid = "cs/0507020", 
+     number = "4", 
+     month = "aug", 
+     volume = "8", 
+     doi = "10.1145/1276920.1276923", 
+     link = "http://dl.acm.org/citation.cfm?id=1276920.1276923 http://arxiv.org/abs/cs/0507020", 
+     year = "2005", 
+     pages = "18", 
+     publisher = "ACM", 
+     keyword = "Computational complexity,enumeration problems,first-order logic", 
+     author = "Durand, Arnaud and Grandjean, Etienne", 
+     journal = "ACM Transactions on Computational Logic", 
+     issn = "15293785", 
+     uri = "http://dl.acm.org/citation.cfm?id=1276920.1276923", 
+     eprint = "0507020", 
+     title = "First-order queries on structures of bounded degree are computable with constant delay", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/262.html">262</a> 
+        
+        </p>
+    </body>
+</html>

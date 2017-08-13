@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Brinkmann2011</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Brinkmann2011, 
+     number = "2", 
+     volume = "13", 
+     link = "http://www.dmtcs.org/dmtcs-ojs/index.php/dmtcs/article/viewArticle/1801", 
+     year = "2011", 
+     pages = "69--80", 
+     keyword = "canonical construction path,cubic graph,generation,graph", 
+     author = "Brinkmann, Gunnar and Goedgebeur, Jan and McKay, BD", 
+     journal = "Discrete Mathematics and Theoretical Computer Science", 
+     uri = "http://www.dmtcs.org/dmtcs-ojs/index.php/dmtcs/article/viewArticle/1801", 
+     title = "Generation of cubic graphs", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/426.html">426</a> 
+        
+        </p>
+    </body>
+</html>

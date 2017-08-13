@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / ZZZ (working) / Geometry, Polyhedron</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/ZZZ (working).html'>ZZZ (working)</a>
+                
+                        <ul>
+                            <li><a href='../../problems/ZZZ (working)/Geometry, Polyhedron.html'>Geometry, Polyhedron</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/ZZZ (working).html">ZZZ (working)</a> / <a href="../../problems/ZZZ (working)/Geometry, Polyhedron.html">Geometry, Polyhedron</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p61">
+            <a href="../../problem/61.html" class="pid">P61</a>: <strong>Enumeration of all face-defining of a plane</strong>
+            </dt>
+            <dd>Input: 
+            
+            </dd>
+            <dd>Output: 
+            
+            </dd>
+            <dd>Complexity: 
+            $O(m l(m,n)f)$ total time and $O(p(m, n))$ space.
+            </dd>
+            <dd>Comment: 
+            $f$ is the number of output, and $l(m, n)$ and $p(m, n)$ are time and space complexity needed to solve an LP with $n$ variables and $m$ constraints.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Fukuda1997">Fukuda1997</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p62">
+            <a href="../../problem/62.html" class="pid">P62</a>: <strong>Enumeration of all vertex-defining of a plane</strong>
+            </dt>
+            <dd>Input: 
+            
+            </dd>
+            <dd>Output: 
+            
+            </dd>
+            <dd>Complexity: 
+            $O(m^2 T(m,n)f)$ total time and $O(S(m, n))$ space.
+            </dd>
+            <dd>Comment: 
+            $f$ is the number of output, and $T(m, n)$ and $S(m, n)$ are time and space complexity needed to solve RVP.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Fukuda1997">Fukuda1997</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

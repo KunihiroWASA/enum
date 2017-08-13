@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 424</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../problems/Graph/Dominating set.html'>Dominating set</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/424.html" class="pid">P424</a>: Enumeration of all minimal dominating sets in a chordal bipartite graph</h2>
+        <dl class="problems">
+            <dd>Input: 
+            A chordal bipartite graph $G$. 
+            </dd>
+            <dd>Output: 
+            All minimal dominating sets in $G$. 
+            </dd>
+            <dd>Complexity: 
+            $O(n^3m|\mathcal{L}|^2)$ delay and the total running time is $O(n^3m|\mathcal{L}^*|^2)$. 
+            </dd>
+            <dd>Comment: 
+            $n$ is the number vertices in $G$, 
+            $m$ is the number of edges in $G$, 
+            $\mathcal{L}$ is the family of already generated minimal dominating sets, and 
+            $\mathcal{L}^*$ is the family of all minimal dominating sets. 
+        
+            </dd>
+            <dd>Reference: [<a href="../references.html#Golovach2015">Golovach2015</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

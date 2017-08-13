@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Tour</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Tour.html'>Tour</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Tour.html">Tour</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p108">
+            <a href="../../problem/108.html" class="pid">P108</a>: <strong>Enumeration of $k$ best solutions to the Chinese postman problem solutions</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            $K$ best solutions to the Chinese postman problem.
+            </dd>
+            <dd>Complexity: 
+            $O(S( n,m ) + K( n + m + \log k + nT( n + m,m ) ) )$ where $S( s,t )$ denotes the time complexity of an algorithm for ordinary Chinese postman problems and $T( s,t )$ denotes the time complexity of a post-optimal algorithm for non-bipartite matching problems defined on a graph with s vertices and t edges.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Saruwatari1993">Saruwatari1993</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Other / Matrix</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Other.html'>Other</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Other/Matrix.html'>Matrix</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Other.html">Other</a> / <a href="../../problems/Other/Matrix.html">Matrix</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p269">
+            <a href="../../problem/269.html" class="pid">P269</a>: <strong>Enumeration of all minimal sets of at most $k$ rows the deletion of which leaves a PP matrix</strong>
+            </dt>
+            <dd>Input: 
+            A binary $n \times m$ matrix $B$ and a positive integer $k$, where $n &gt; 4k$.
+            </dd>
+            <dd>Output: 
+            All minimal sets of at most $k$ rows the deletion of which leaves a PP matrix.
+            </dd>
+            <dd>Complexity: 
+            $O(3^k nm)$ time.
+            </dd>
+            <dd>Comment: 
+            A PP matrix is a perfect phylogeny matrix.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Damaschke2006">Damaschke2006</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

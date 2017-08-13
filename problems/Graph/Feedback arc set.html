@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Feedback arc set</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Feedback arc set.html'>Feedback arc set</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Feedback arc set.html">Feedback arc set</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p433">
+            <a href="../../problem/433.html" class="pid">P433</a>: <strong>Enumeration of all minimal feedback arc sets in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G$. 
+            </dd>
+            <dd>Output: 
+            All minimal feedback arc sets in $G$. 
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Yau1967">Yau1967</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p24">
+            <a href="../../problem/24.html" class="pid">P24</a>: <strong>Enumeration of all minimal feedback arc sets in a directed graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed graph $G=(V,E)$.
+            </dd>
+            <dd>Output: 
+            All minimal feedback arc sets in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V||E|(|V|+|E|))$ time delay.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Schwikowski2002">Schwikowski2002</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

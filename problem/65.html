@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 65</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Matroid.html'>Matroid</a>
+                
+                        <ul>
+                            <li><a href='../problems/Matroid/Basis.html'>Basis</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/65.html" class="pid">P65</a>: Enumeration of all common bases in two matroids</h2>
+        <dl class="problems">
+            <dd>Input: 
+            Two matroids  $M_1 = (E, \beta_1)$ and $M_2 = (E, \beta_2)$.
+            </dd>
+            <dd>Output: 
+            All $B \in \beta_1 \cap \beta_2$.
+            </dd>
+            <dd>Complexity: 
+            $O(|E| ( |E|^2 + t)\lambda)$ total time and $O(|E|^2)$ space.
+            </dd>
+            <dd>Comment: 
+            $\lambda$ is the number of common bases and $t$ is time complexity of one pivot operation.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Fukuda1995">Fukuda1995</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

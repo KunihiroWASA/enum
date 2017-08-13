@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Spanning subgraph</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Spanning subgraph.html'>Spanning subgraph</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Spanning subgraph.html">Spanning subgraph</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p138">
+            <a href="../../problem/138.html" class="pid">P138</a>: <strong>Enumeration of all minimal $k$-vertex connected spanning subgraphs in a $k$-connected graph.</strong>
+            </dt>
+            <dd>Input: 
+            A $k$-connected graph $G$.
+            </dd>
+            <dd>Output: 
+            All minimal $k$-vertex connected spanning subgraphs in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(K^3|E|^3|n| + K^2|E|^5|V|^4 + K|V|^k|E|^2)$ total time.
+            </dd>
+            <dd>Comment: 
+            $K$ is the number of solutions.  A graph $G$ is $k$-connected if a subgraph of $G$ obtained by removing at most $k-1$ vertices is still connected.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Boros2007">Boros2007</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p234">
+            <a href="../../problem/234.html" class="pid">P234</a>: <strong>Enumeration of all minimal spanning graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$, $S \subseteq V$, and requirements $r(u, v)$ for all $(u, v) \in V \times V$.
+            </dd>
+            <dd>Output: 
+            All minimal spanning graph $H$ of $G$ satisfying $\lambda^S_H \ge r(u, v) \; \forall (u, v) \in V \times V$.
+            </dd>
+            <dd>Complexity: 
+            Incremental polynomial time.
+            </dd>
+            <dd>Comment: 
+            The $S$-connectivity $\lambda^S_G(u, v)$ of $(u, v)$ in $G$ is the maximum number of $uv$-paths such that no two of them have an edge or a node in $S \setminus \{u, v\}$ in common. This complexity holds for edge-connectivity.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Nutov2009">Nutov2009</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p235">
+            <a href="../../problem/235.html" class="pid">P235</a>: <strong>Enumeration of all $k$-outconnected minimal spanning graph</strong>
+            </dt>
+            <dd>Input: 
+            A graph $G = (V, E)$, a vertex $s \in V$, and an integer $k$.
+            </dd>
+            <dd>Output: 
+            All minimal $k$-outconneted from $s$ spanning subgraph of $G$.
+            </dd>
+            <dd>Complexity: 
+            Incremental polynomial time.
+            </dd>
+            <dd>Comment: 
+            A graph is $k$-outconnected from $s$ if it contains $k$ internally-disjoint $st$-paths for every $t \in V$. This complexity holds for both vertex and edge-connectivity.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Nutov2009">Nutov2009</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p236">
+            <a href="../../problem/236.html" class="pid">P236</a>: <strong>Enumeration of all $k$-outconnected minimal spanning graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed graph $G = (V, E)$, a vertex $s \in V$, and an integer $k$.
+            </dd>
+            <dd>Output: 
+            All minimal $k$-outconneted from $s$ spanning subgraph of $G$.
+            </dd>
+            <dd>Complexity: 
+            Incremental polynomial time.
+            </dd>
+            <dd>Comment: 
+            A graph is $k$-outconnected from $s$ if it contains $k$ internally-disjoint $st$-paths for every $t \in V$. This complexity holds for both vertex and edge-connectivity.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Nutov2009">Nutov2009</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p237">
+            <a href="../../problem/237.html" class="pid">P237</a>: <strong>Enumeration of all $k$-connected minimal spanning graph</strong>
+            </dt>
+            <dd>Input: 
+            A directed graph $G = (V, E)$ and an integer $k$.
+            </dd>
+            <dd>Output: 
+            All minimal $k$-connected spanning subgraph of $G$.
+            </dd>
+            <dd>Complexity: 
+            Incremental polynomial time.
+            </dd>
+            <dd>Comment: 
+            This complexity holds for both vertex and edge-connectivity.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Nutov2009">Nutov2009</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

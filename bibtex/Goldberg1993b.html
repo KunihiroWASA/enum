@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Goldberg1993b</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@inproceedings{Goldberg1993b, 
+     isbn = "0897915917", 
+     address = "San Diego, CA, USA", 
+     month = "jun", 
+     doi = "10.1145/167088.167160", 
+     link = "http://dl.acm.org/citation.cfm?id=167088.167160 http://portal.acm.org/citation.cfm?doid=167088.167160", 
+     year = "1993", 
+     pages = "218--225", 
+     publisher = "ACM Press", 
+     author = "Goldberg, Leslie Ann", 
+     booktitle = "STOC 1993: the 25th annual ACM symposium on Theory of computing", 
+     uri = "http://dl.acm.org/citation.cfm?id=167088.167160", 
+     editor = "Kosaraju, Rao and Johnson, David and Aggarwal, Alok", 
+     title = "Polynomial space polynomial delay algorithms for listing families of graphs", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/340.html">340</a> 
+        
+        </p>
+    </body>
+</html>

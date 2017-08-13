@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Beyer1980</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Beyer1980, 
+     number = "4", 
+     month = "nov", 
+     volume = "9", 
+     doi = "10.1137/0209055", 
+     link = "http://epubs.siam.org/doi/abs/10.1137/0209055", 
+     year = "1980", 
+     pages = "706--712", 
+     keyword = "1,3,algorithm,all binary,and all k-ary trees,and wilf,centered on rooted trees,in generating random trees,interest has arisen recently,introduction,lexicographic order,rooted tree generation,that is,the algorithm of nijenhuis,the present work has,those,trees,trees with a designated,vertex as the root", 
+     author = "Beyer, Terry and Hedetniemi, Sandra Mitchell", 
+     journal = "SIAM Journal on Computing", 
+     issn = "0097-5397", 
+     uri = "http://epubs.siam.org/doi/abs/10.1137/0209055", 
+     title = "Constant Time Generation of Rooted Trees", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/378.html">378</a> 
+        
+        </p>
+    </body>
+</html>

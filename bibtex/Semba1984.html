@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Semba1984</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@article{Semba1984, 
+     zzzdoi = "MY/Semba_1984_110002673365", 
+     number = "1", 
+     volume = "7", 
+     link = "http://ci.nii.ac.jp/naid/110002673365/", 
+     year = "1984", 
+     pages = "41--42", 
+     author = "Semba, Ichiro", 
+     journal = "Journal of information processing", 
+     uri = "http://ci.nii.ac.jp/naid/110002673365/", 
+     title = "An Efficient Algorithm for Generating all Partitions of the Set\{1, 2, ..., n\}", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/369.html">369</a> 
+        
+        </p>
+    </body>
+</html>

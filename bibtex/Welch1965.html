@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Welch1965</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@inproceedings{Welch1965, 
+     address = "New York, New York, USA", 
+     month = "aug", 
+     doi = "10.1145/800197.806053", 
+     link = "http://portal.acm.org/citation.cfm?doid=800197.806053", 
+     year = "1965", 
+     pages = "296--301", 
+     publisher = "ACM Press", 
+     author = "Welch, J T", 
+     booktitle = "Proceedings of the 1965 20th national conference", 
+     uri = "http://portal.acm.org/citation.cfm?doid=800197.806053", 
+     editor = "", 
+     title = "Cycle Algorithms for Undirected Linear Graphs and Some immediate Applications", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/428.html">428</a> 
+        
+        </p>
+    </body>
+</html>

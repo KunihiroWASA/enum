@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Gusfield1989</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@book{Gusfield1989, 
+     isbn = "0-262-07118-5", 
+     month = "sep", 
+     doi = "10.978.0262515/528", 
+     link = "http://dl.acm.org/citation.cfm?id=68392", 
+     year = "1989", 
+     publisher = "MIT Press", 
+     author = "Gusfield, Dan and Irving, Robert W.", 
+     uri = "http://dl.acm.org/citation.cfm?id=68392", 
+     title = "The Stable Marriage Problem: Structure and Algorithms", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/69.html">69</a> 
+        
+        </p>
+    </body>
+</html>

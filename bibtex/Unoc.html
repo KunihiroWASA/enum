@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Unoc</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@inproceedings{Unoc, 
+     series = "Lecture Notes in Computer Science", 
+     address = "Bled, Slovenia", 
+     month = "oct", 
+     volume = "8777", 
+     doi = "10.1007/978-3-319-11812-3_27", 
+     link = "http://link.springer.com/chapter/10.1007/978-3-319-11812-3_27", 
+     year = "2014", 
+     pages = "313--324", 
+     publisher = "Springer Berlin Heidelberg", 
+     author = "Uno, Takeaki and Satoh, Hiroko", 
+     booktitle = "DS 2014: the 17th International Conference on Discovery Science", 
+     uri = "http://link.springer.com/chapter/10.1007/978-3-319-11812-3_27", 
+     editor = "D\v{z}eroski, Sa\v{s}o and Panov, Pan\v{c}e and Kocev, Dragi and Todorovski, Ljup\v{c}o", 
+     title = "An Efficient Algorithm for Enumerating Chordless Cycles and Chordless Paths", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/12.html">12</a> 
+        
+        <a href="../problem/14.html">14</a> 
+        
+        </p>
+    </body>
+</html>

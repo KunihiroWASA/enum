@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Other / Assignment</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Other.html'>Other</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Other/Assignment.html'>Assignment</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Other.html">Other</a> / <a href="../../problems/Other/Assignment.html">Assignment</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p90">
+            <a href="../../problem/90.html" class="pid">P90</a>: <strong>Enumeration of all assignment</strong>
+            </dt>
+            <dd>Input: 
+            An integer $n$ and $n \times n$ cost matrix $C = (c_{ij})$.
+            </dd>
+            <dd>Output: 
+            All assignments that minimizes $\sum^{i=n}_{i=1}\sum^{j=n}_{j=1} c_{ij}x_{ij}$ subject to $\sum^{i=n}_{i=1} x_{ij} = 1 \; (j = 1, \dots, n)$, $\sum^{j=n}_{j=1} x_{ij} = 1\; (i = 1, \dots, n)$, and $x_{ij} \ge 0$.
+            </dd>
+            <dd>Complexity: 
+            
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Murty1968">Murty1968</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

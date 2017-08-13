@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Coloring</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Coloring.html'>Coloring</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Coloring.html">Coloring</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p122">
+            <a href="../../problem/122.html" class="pid">P122</a>: <strong>Enumeration of all the edge colorings in a bipartite graph</strong>
+            </dt>
+            <dd>Input: 
+            A bipartite graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All edge colorings in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(\Delta|E|)$ time per solution and space.
+            </dd>
+            <dd>Comment: 
+            $\Delta$ is the maximum degree in $G$.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Yasuko1994">Yasuko1994</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p86">
+            <a href="../../problem/86.html" class="pid">P86</a>: <strong>Enumeration of all the edge colorings of a bipartite graph</strong>
+            </dt>
+            <dd>Input: 
+            A bipartite graph $B = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All the edge colorings pf $B$.
+            </dd>
+            <dd>Complexity: 
+            $O(T(|V|+|E|+\Delta) + K \min \{|V|^2 + |E|, T(|V|, |E|, \Delta)\})$ total time and $O(|E|\Delta)$ space.
+            </dd>
+            <dd>Comment: 
+            $\Delta$ is the number of maximum degree and $T(|V|, |E|, \Delta)$ is the time complexity of an edge coloring algorithm.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Matsui1996b">Matsui1996b</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p87">
+            <a href="../../problem/87.html" class="pid">P87</a>: <strong>Enumeration of all the edge colorings of a bipartite graph</strong>
+            </dt>
+            <dd>Input: 
+            A bipartite graph $B = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All the edge colorings pf $B$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|)$ time per solution and $O(|E|)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Matsui1996a">Matsui1996a</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

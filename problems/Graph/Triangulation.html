@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Triangulation</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Triangulation.html'>Triangulation</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Triangulation.html">Triangulation</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p394">
+            <a href="../../problem/394.html" class="pid">P394</a>: <strong>Enumeration of all triangulations of 2-sphere</strong>
+            </dt>
+            <dd>Input: 
+            A 2-sphere $G$.  
+            </dd>
+            <dd>Output: 
+            All triangulations of $G$. 
+            </dd>
+            <dd>Complexity: 
+             
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Bowen1967a">Bowen1967a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p320">
+            <a href="../../problem/320.html" class="pid">P320</a>: <strong>Enumeration of all $r$-rooted $2$-connected triangulations of a planar graph</strong>
+            </dt>
+            <dd>Input: 
+            A planar graph $G = (V, E)$ and an integer $r$.
+            </dd>
+            <dd>Output: 
+            All $r$-rooted $2$-connected triangulations of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|^2N)$ total time and $O(|V|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Avis1996b">Avis1996b</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p321">
+            <a href="../../problem/321.html" class="pid">P321</a>: <strong>Enumeration of all $r$-rooted $3$-connected triangulations of a planar graph</strong>
+            </dt>
+            <dd>Input: 
+            A planar graph $G = (V, E)$ and an integer $r$.
+            </dd>
+            <dd>Output: 
+            All $r$-rooted $3$-connected triangulations of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|^2N)$ total time and $O(|V|)$ space.
+            </dd>
+            <dd>Comment: 
+            $N$ is the number of solutions.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Avis1996b">Avis1996b</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p144">
+            <a href="../../problem/144.html" class="pid">P144</a>: <strong>Enumeration of all based plane triangulations with $n$ vertices</strong>
+            </dt>
+            <dd>Input: 
+            An integer $n$.
+            </dd>
+            <dd>Output: 
+            All based plane triangulations.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ time per based plane triangulation with $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            A \textit{based plane triangulation} is a plane triangulation with one designated edge on the outer face. The algorithm does not output entire solution but output the difference from the previous solution.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Nakano2004a">Nakano2004a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p145">
+            <a href="../../problem/145.html" class="pid">P145</a>: <strong>Enumeration of all biconnected based plane triangulations with $n$ vertices and $r$ vertices on the outer face</strong>
+            </dt>
+            <dd>Input: 
+            Integers $n$ and $r$.
+            </dd>
+            <dd>Output: 
+            All biconnected based plane triangulations with $n$ vertices and $r$ vertices on the outer face.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ time per based plane triangulation with $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            A \textit{based plane triangulation} is a plane triangulation with one designated edge on the outer face. The algorithm does not output entire solution but output the difference from the previous solution.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Nakano2004a">Nakano2004a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p146">
+            <a href="../../problem/146.html" class="pid">P146</a>: <strong>Enumeration of all biconnected plane triangulations with $n$ vertices and $r$ vertices on the outer face</strong>
+            </dt>
+            <dd>Input: 
+            Integers $n$ and $r$.
+            </dd>
+            <dd>Output: 
+            All biconnected based plane triangulations with $n$ vertices and $r$ vertices on the outer face.
+            </dd>
+            <dd>Complexity: 
+            $O(r^2n)$ time per based plane triangulation with $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Nakano2004a">Nakano2004a</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p160">
+            <a href="../../problem/160.html" class="pid">P160</a>: <strong>Enumeration of all rooted triconnected plane triangulations with at most $n$ vertices</strong>
+            </dt>
+            <dd>Input: 
+            An integer $n$.
+            </dd>
+            <dd>Output: 
+            All triconnected rooted plane triangulations with at most $n$ vertices.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ time per tree and $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            A \textit{rooted} plane triangulation is a plane triangulation with one designated vertex on the outer face.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Nakano2001">Nakano2001</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p161">
+            <a href="../../problem/161.html" class="pid">P161</a>: <strong>Enumeration of all rooted triconnected plane triangulations with exactly $n$ vertices and $r$ leaves</strong>
+            </dt>
+            <dd>Input: 
+            An integer $n$.
+            </dd>
+            <dd>Output: 
+            All triconnected rooted plane triangulations with exactly $n$ vertices and $r$ leaves.
+            </dd>
+            <dd>Complexity: 
+            $O(r)$ time per tree and $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            A \textit{rooted} plane triangulation is a plane triangulation with one designated vertex on the outer face.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Nakano2001">Nakano2001</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p162">
+            <a href="../../problem/162.html" class="pid">P162</a>: <strong>Enumeration of all triconnected plane triangulations with exactly $n$ vertices and $r$ leaves</strong>
+            </dt>
+            <dd>Input: 
+            An integer $n$.
+            </dd>
+            <dd>Output: 
+            All triconnected plane triangulations with exactly $n$ vertices and $r$ leaves.
+            </dd>
+            <dd>Complexity: 
+            $O(r^n)$ time per triangulation and $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Nakano2001">Nakano2001</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p19">
+            <a href="../../problem/19.html" class="pid">P19</a>: <strong>Enumeration of all triangulations</strong>
+            </dt>
+            <dd>Input: 
+            A set $S$ of $n$ points in the general position in the plane.
+            </dd>
+            <dd>Output: 
+            all the triangulations whose vertex set is $S$ and edge set includes the convex hull of $S$.
+            </dd>
+            <dd>Complexity: 
+            $O(\log\log n)$ time per triangulation and linear space.
+            </dd>
+            <dd>Comment: 
+            Whether there is the algorithm that outputs all triangulations in constant time delay?
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Bespamyatnikh2002">Bespamyatnikh2002</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p170">
+            <a href="../../problem/170.html" class="pid">P170</a>: <strong>Enumeration of all biconnected plane triangulations with $n$ vertices and $r$ vertices on the outer faces</strong>
+            </dt>
+            <dd>Input: 
+            Integers $n$ and $r$.
+            </dd>
+            <dd>Output: 
+            All biconnected plane triangulations with $n$ vertices and $r$ vertices on the outer faces.
+            </dd>
+            <dd>Complexity: 
+            $O(rn)$ time per triangulation and $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Nakano2004b">Nakano2004b</a>]
+            </dd>
+            
+            <dt class="enum_statement" id="p173">
+            <a href="../../problem/173.html" class="pid">P173</a>: <strong>Enumeration of all triangulations of a triconnected plane graph of $n$ vertices</strong>
+            </dt>
+            <dd>Input: 
+            A triconnected planar graph $G$ with $n$ vertices.
+            </dd>
+            <dd>Output: 
+            All triangulations of $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(1)$ time per triangulation and $O(n)$ space.
+            </dd>
+            <dd>Comment: 
+            
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Parvez2009">Parvez2009</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

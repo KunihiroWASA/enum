@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 95</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../problems/Graph/Cut.html'>Cut</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/95.html" class="pid">P95</a>: Enumeration of all semidirected $(s, t)$ cuts in a directed graph</h2>
+        <dl class="problems">
+            <dd>Input: 
+            A directed graph $G = (V, E)$ and two vertices $s, t$ in $G$.
+            </dd>
+            <dd>Output: 
+            All semidirected $(s, t)$ cuts in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V||E|)$ time per cut.
+            </dd>
+            <dd>Comment: 
+            For a subset $D$ of directed edges, a \textit{semidirected $(s, t)$ cut} with respect to $D$ is an $(s, t)$ cut $(X, Y)$ such that $(X, Y) \cup (Y, X)$ defnes an undirected $(s, t)$ cutset and such that $(X, Y) \cap D = \emptyset$, where a \textit{cutset} is an minimal cut set.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Provan1996">Provan1996</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

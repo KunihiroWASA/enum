@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Graph / Quadrangle</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../../index.html'>Index</a>
+            <li><a href='../../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../../problems/Graph/Quadrangle.html'>Quadrangle</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../../references.html'>References</a></li>
+            <li><a href='../../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Quadrangle.html">Quadrangle</a></h2>
+        <dl class="problems">
+            <dt class="enum_statement" id="p183">
+            <a href="../../problem/183.html" class="pid">P183</a>: <strong>Enumeration of all quadrangles in a graph</strong>
+            </dt>
+            <dd>Input: 
+            A connected graph $G = (V, E)$.
+            </dd>
+            <dd>Output: 
+            All quadrangles in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(\alpha(G)|E|)$ total time and $O(|E|)$ space.
+            </dd>
+            <dd>Comment: 
+            $\alpha(G)$ is the minimum number of edge-disjoint spanning forests into which $G$ can be decomposed.
+            </dd>
+            <dd>Reference: [<a href="../../references.html#Chiba1985">Chiba1985</a>]
+            </dd>
+            
+        </dl>
+    </body>
+</html>

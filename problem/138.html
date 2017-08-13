@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 138</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../problems/Graph/Spanning subgraph.html'>Spanning subgraph</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/138.html" class="pid">P138</a>: Enumeration of all minimal $k$-vertex connected spanning subgraphs in a $k$-connected graph.</h2>
+        <dl class="problems">
+            <dd>Input: 
+            A $k$-connected graph $G$.
+            </dd>
+            <dd>Output: 
+            All minimal $k$-vertex connected spanning subgraphs in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(K^3|E|^3|n| + K^2|E|^5|V|^4 + K|V|^k|E|^2)$ total time.
+            </dd>
+            <dd>Comment: 
+            $K$ is the number of solutions.  A graph $G$ is $k$-connected if a subgraph of $G$ obtained by removing at most $k-1$ vertices is still connected.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Boros2007">Boros2007</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

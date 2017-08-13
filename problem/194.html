@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 194</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+                <ul>
+                    <li><a href='../problems/Graph.html'>Graph</a>
+                
+                        <ul>
+                            <li><a href='../problems/Graph/Path.html'>Path</a></li>
+                        </ul>
+                
+                    </li>
+                </ul>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+        
+        <h2><a href="../problem/194.html" class="pid">P194</a>: Enumeration of all $C_k$&#39;s in a graph</h2>
+        <dl class="problems">
+            <dd>Input: 
+            A graph $G$ and an integer $k \ge 4$.
+            </dd>
+            <dd>Output: 
+            All of all $C_k$&#39;s in $G$.
+            </dd>
+            <dd>Complexity: 
+            $O(|V|^{k-1} + p_k(G) + c_k(G))$ total time.
+            </dd>
+            <dd>Comment: 
+            $P_k$ and $C_k$ are a induced path and cycle of $G$ with $k$ vertices, respectively. $p_k(G)$ and $c_k(G)$ are the number of $P_k$ and $C_k$ in $G$, respectively.
+            </dd>
+            <dd>Reference: [<a href="../references.html#Hoang2013">Hoang2013</a>]
+            </dd>
+        </dl>
+        
+    </body>
+</html>

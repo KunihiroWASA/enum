@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
+    "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+    }
+});
+        </script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Bibtex: Matsui2008</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href='../index.html'>Index</a>
+            <li><a href='../problem_list.html'>Problem list</a>
+            
+            </li>
+            <li><a href='../references.html'>References</a></li>
+            <li><a href='../dblp.html'>DBLP data</a></li>
+            
+        </ul>
+<pre>
+@inproceedings{Matsui2008, 
+     series = "Lecture Notes in Computer Science", 
+     address = "Gold Coast, Australia", 
+     month = "dec", 
+     volume = "5369", 
+     doi = "10.1007/978-3-540-92182-0_75", 
+     link = "http://link.springer.com/chapter/10.1007/978-3-540-92182-0_75", 
+     year = "2008", 
+     pages = "859--870", 
+     publisher = "Springer Berlin Heidelberg", 
+     keyword = "chordal graph,clique tree,enumeration,perfect sequence", 
+     author = "Matsui, Yasuko and Uehara, Ryuhei and Uno, Takeaki", 
+     booktitle = "ISAAC 2008: the 19th International Symposium on Algorithms and Computation", 
+     uri = "http://link.springer.com/chapter/10.1007/978-3-540-92182-0_75", 
+     editor = "Hong, Seok-Hee and Nagamochi, Hiroshi and Fukunaga, Takuro", 
+     title = "Enumeration of Perfect Sequences of Chordal Graph", 
+}
+</pre>
+        <p>
+        Problems: 
+        
+        <a href="../problem/241.html">241</a> 
+        
+        </p>
+    </body>
+</html>
