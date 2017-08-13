@@ -15,43 +15,50 @@ $(function(){
     });
 });
         </script>
+
         <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    skipStartupTypeset: true,
-    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
-    "HTML-CSS": {
+  MathJax.Hub.Config({ 
+      tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }, 
+      "HTML-CSS": {
         availableFonts: [],
         preferredFont: null,
         webFont: "Latin-Modern"
-    }
-});
-        </script>
+        }
+    });
+</script>
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
 
         <title>Problem: 270</title>
     </head>
-    <body>
-        <ul>
-            <li><a href='../index.html'>Index</a>
-            <li><a href='../problem_list.html'>Problem list</a>
-            
-                <ul>
-                    <li><a href='../problems/Graph.html'>Graph</a>
-                
-                        <ul>
-                            <li><a href='../problems/Graph/Chordal graph.html'>Chordal graph</a></li>
-                        </ul>
-                
-                    </li>
-                </ul>
-            
-            </li>
-            <li><a href='../references.html'>References</a></li>
-            <li><a href='../dblp.html'>DBLP data</a></li>
-            
-        </ul>
+    
+    
         
-        <h2><a href="../problem/270.html" class="pid">P270</a>: Enumeration of all chordal graphs in a graph</h2>
+    
+    <body>
+        <nav>
+            <ul>
+                <li><a href='../index'>Index</a>
+                <li><a href='../problem_list'>Problem list</a>
+                
+                    <ul>
+                        <li><a href='../problems/Graph'>Graph</a>
+                    
+                            <ul>
+                                <li><a href='../problems/Graph/Chordal graph'>Chordal graph</a></li>
+                            </ul>
+                    
+                        </li>
+                    </ul>
+                
+                </li>
+                <li><a href='../references'>References</a></li>
+                <li><a href='../dblp'>DBLP data</a></li>
+                
+            </ul>
+        </nav>
+        
+        
+        <h2><a href="../problem/270" class="pid">P270</a>: Enumeration of all chordal graphs in a graph</h2>
         <dl class="problems">
             <dd>Input: 
             A graph $G$.
@@ -65,9 +72,15 @@ MathJax.Hub.Config({
             <dd>Comment: 
             Using reverse search.
             </dd>
-            <dd>Reference: [<a href="../references.html#Kiyomi2006">Kiyomi2006</a>]
+            <dd>Reference: [<a href="../references#Kiyomi2006">Kiyomi2006</a>]
             </dd>
         </dl>
         
+
+        <hr />
+        <footer>
+        <p><address>Kunihiro Wasa: kunihiro.wasa[at]gmail.com</address></p>
+        <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
+        </footer>
     </body>
 </html>

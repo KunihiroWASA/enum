@@ -15,45 +15,52 @@ $(function(){
     });
 });
         </script>
+
         <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    skipStartupTypeset: true,
-    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
-    "HTML-CSS": {
+  MathJax.Hub.Config({ 
+      tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }, 
+      "HTML-CSS": {
         availableFonts: [],
         preferredFont: null,
         webFont: "Latin-Modern"
-    }
-});
-        </script>
+        }
+    });
+</script>
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
 
         <title>Problem / Graph / Interval graph</title>
     </head>
+    
+    
+        
+    
     <body>
-        <ul>
-            <li><a href='../../index.html'>Index</a>
-            <li><a href='../../problem_list.html'>Problem list</a>
-            
-                <ul>
-                    <li><a href='../../problems/Graph.html'>Graph</a>
+        <nav>
+            <ul>
+                <li><a href='../../index'>Index</a>
+                <li><a href='../../problem_list'>Problem list</a>
                 
-                        <ul>
-                            <li><a href='../../problems/Graph/Interval graph.html'>Interval graph</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href='../../problems/Graph'>Graph</a>
+                    
+                            <ul>
+                                <li><a href='../../problems/Graph/Interval graph'>Interval graph</a></li>
+                            </ul>
+                    
+                        </li>
+                    </ul>
                 
-                    </li>
-                </ul>
-            
-            </li>
-            <li><a href='../../references.html'>References</a></li>
-            <li><a href='../../dblp.html'>DBLP data</a></li>
-            
-        </ul>
-        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Interval graph.html">Interval graph</a></h2>
+                </li>
+                <li><a href='../../references'>References</a></li>
+                <li><a href='../../dblp'>DBLP data</a></li>
+                
+            </ul>
+        </nav>
+        
+        <h2><a href="../../problems/Graph">Graph</a> / <a href="../../problems/Graph/Interval graph">Interval graph</a></h2>
         <dl class="problems">
             <dt class="enum_statement" id="p273">
-            <a href="../../problem/273.html" class="pid">P273</a>: <strong>Enumeration of all interval supergraph that contains a given graph</strong>
+            <a href="../../problem/273" class="pid">P273</a>: <strong>Enumeration of all interval supergraph that contains a given graph</strong>
             </dt>
             <dd>Input: 
             A graph $G = (V, E)$.
@@ -67,11 +74,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             
             </dd>
-            <dd>Reference: [<a href="../../references.html#Kiyomi2006a">Kiyomi2006a</a>]
+            <dd>Reference: [<a href="../../references#Kiyomi2006a">Kiyomi2006a</a>]
             </dd>
             
             <dt class="enum_statement" id="p274">
-            <a href="../../problem/274.html" class="pid">P274</a>: <strong>Enumeration of all interval graph of a given graph</strong>
+            <a href="../../problem/274" class="pid">P274</a>: <strong>Enumeration of all interval graph of a given graph</strong>
             </dt>
             <dd>Input: 
             A graph $G = (V, E)$.
@@ -85,11 +92,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             
             </dd>
-            <dd>Reference: [<a href="../../references.html#Kiyomi2006a">Kiyomi2006a</a>]
+            <dd>Reference: [<a href="../../references#Kiyomi2006a">Kiyomi2006a</a>]
             </dd>
             
             <dt class="enum_statement" id="p123">
-            <a href="../../problem/123.html" class="pid">P123</a>: <strong>Enumeration of Proper Interval Graphs</strong>
+            <a href="../../problem/123" class="pid">P123</a>: <strong>Enumeration of Proper Interval Graphs</strong>
             </dt>
             <dd>Input: 
             An integer $n$.
@@ -103,9 +110,15 @@ MathJax.Hub.Config({
             <dd>Comment: 
             Preprocessing: generating the complete graph with $n$ vertices.
             </dd>
-            <dd>Reference: [<a href="../../references.html#Saitoh2010a">Saitoh2010a</a>]
+            <dd>Reference: [<a href="../../references#Saitoh2010a">Saitoh2010a</a>]
             </dd>
             
         </dl>
+
+        <hr />
+        <footer>
+        <p><address>Kunihiro Wasa: kunihiro.wasa[at]gmail.com</address></p>
+        <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
+        </footer>
     </body>
 </html>

@@ -15,45 +15,52 @@ $(function(){
     });
 });
         </script>
+
         <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    skipStartupTypeset: true,
-    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
-    "HTML-CSS": {
+  MathJax.Hub.Config({ 
+      tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }, 
+      "HTML-CSS": {
         availableFonts: [],
         preferredFont: null,
         webFont: "Latin-Modern"
-    }
-});
-        </script>
+        }
+    });
+</script>
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
 
         <title>Problem / Graph / Triangulation</title>
     </head>
+    
+    
+        
+    
     <body>
-        <ul>
-            <li><a href='../../index.html'>Index</a>
-            <li><a href='../../problem_list.html'>Problem list</a>
-            
-                <ul>
-                    <li><a href='../../problems/Graph.html'>Graph</a>
+        <nav>
+            <ul>
+                <li><a href='../../index'>Index</a>
+                <li><a href='../../problem_list'>Problem list</a>
                 
-                        <ul>
-                            <li><a href='../../problems/Graph/Triangulation.html'>Triangulation</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href='../../problems/Graph'>Graph</a>
+                    
+                            <ul>
+                                <li><a href='../../problems/Graph/Triangulation'>Triangulation</a></li>
+                            </ul>
+                    
+                        </li>
+                    </ul>
                 
-                    </li>
-                </ul>
-            
-            </li>
-            <li><a href='../../references.html'>References</a></li>
-            <li><a href='../../dblp.html'>DBLP data</a></li>
-            
-        </ul>
-        <h2><a href="../../problems/Graph.html">Graph</a> / <a href="../../problems/Graph/Triangulation.html">Triangulation</a></h2>
+                </li>
+                <li><a href='../../references'>References</a></li>
+                <li><a href='../../dblp'>DBLP data</a></li>
+                
+            </ul>
+        </nav>
+        
+        <h2><a href="../../problems/Graph">Graph</a> / <a href="../../problems/Graph/Triangulation">Triangulation</a></h2>
         <dl class="problems">
             <dt class="enum_statement" id="p394">
-            <a href="../../problem/394.html" class="pid">P394</a>: <strong>Enumeration of all triangulations of 2-sphere</strong>
+            <a href="../../problem/394" class="pid">P394</a>: <strong>Enumeration of all triangulations of 2-sphere</strong>
             </dt>
             <dd>Input: 
             A 2-sphere $G$.  
@@ -67,11 +74,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             
             </dd>
-            <dd>Reference: [<a href="../../references.html#Bowen1967a">Bowen1967a</a>]
+            <dd>Reference: [<a href="../../references#Bowen1967a">Bowen1967a</a>]
             </dd>
             
             <dt class="enum_statement" id="p320">
-            <a href="../../problem/320.html" class="pid">P320</a>: <strong>Enumeration of all $r$-rooted $2$-connected triangulations of a planar graph</strong>
+            <a href="../../problem/320" class="pid">P320</a>: <strong>Enumeration of all $r$-rooted $2$-connected triangulations of a planar graph</strong>
             </dt>
             <dd>Input: 
             A planar graph $G = (V, E)$ and an integer $r$.
@@ -85,11 +92,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             $N$ is the number of solutions.
             </dd>
-            <dd>Reference: [<a href="../../references.html#Avis1996b">Avis1996b</a>]
+            <dd>Reference: [<a href="../../references#Avis1996b">Avis1996b</a>]
             </dd>
             
             <dt class="enum_statement" id="p321">
-            <a href="../../problem/321.html" class="pid">P321</a>: <strong>Enumeration of all $r$-rooted $3$-connected triangulations of a planar graph</strong>
+            <a href="../../problem/321" class="pid">P321</a>: <strong>Enumeration of all $r$-rooted $3$-connected triangulations of a planar graph</strong>
             </dt>
             <dd>Input: 
             A planar graph $G = (V, E)$ and an integer $r$.
@@ -103,11 +110,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             $N$ is the number of solutions.
             </dd>
-            <dd>Reference: [<a href="../../references.html#Avis1996b">Avis1996b</a>]
+            <dd>Reference: [<a href="../../references#Avis1996b">Avis1996b</a>]
             </dd>
             
             <dt class="enum_statement" id="p144">
-            <a href="../../problem/144.html" class="pid">P144</a>: <strong>Enumeration of all based plane triangulations with $n$ vertices</strong>
+            <a href="../../problem/144" class="pid">P144</a>: <strong>Enumeration of all based plane triangulations with $n$ vertices</strong>
             </dt>
             <dd>Input: 
             An integer $n$.
@@ -121,11 +128,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             A \textit{based plane triangulation} is a plane triangulation with one designated edge on the outer face. The algorithm does not output entire solution but output the difference from the previous solution.
             </dd>
-            <dd>Reference: [<a href="../../references.html#Nakano2004a">Nakano2004a</a>]
+            <dd>Reference: [<a href="../../references#Nakano2004a">Nakano2004a</a>]
             </dd>
             
             <dt class="enum_statement" id="p145">
-            <a href="../../problem/145.html" class="pid">P145</a>: <strong>Enumeration of all biconnected based plane triangulations with $n$ vertices and $r$ vertices on the outer face</strong>
+            <a href="../../problem/145" class="pid">P145</a>: <strong>Enumeration of all biconnected based plane triangulations with $n$ vertices and $r$ vertices on the outer face</strong>
             </dt>
             <dd>Input: 
             Integers $n$ and $r$.
@@ -139,11 +146,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             A \textit{based plane triangulation} is a plane triangulation with one designated edge on the outer face. The algorithm does not output entire solution but output the difference from the previous solution.
             </dd>
-            <dd>Reference: [<a href="../../references.html#Nakano2004a">Nakano2004a</a>]
+            <dd>Reference: [<a href="../../references#Nakano2004a">Nakano2004a</a>]
             </dd>
             
             <dt class="enum_statement" id="p146">
-            <a href="../../problem/146.html" class="pid">P146</a>: <strong>Enumeration of all biconnected plane triangulations with $n$ vertices and $r$ vertices on the outer face</strong>
+            <a href="../../problem/146" class="pid">P146</a>: <strong>Enumeration of all biconnected plane triangulations with $n$ vertices and $r$ vertices on the outer face</strong>
             </dt>
             <dd>Input: 
             Integers $n$ and $r$.
@@ -157,11 +164,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             
             </dd>
-            <dd>Reference: [<a href="../../references.html#Nakano2004a">Nakano2004a</a>]
+            <dd>Reference: [<a href="../../references#Nakano2004a">Nakano2004a</a>]
             </dd>
             
             <dt class="enum_statement" id="p160">
-            <a href="../../problem/160.html" class="pid">P160</a>: <strong>Enumeration of all rooted triconnected plane triangulations with at most $n$ vertices</strong>
+            <a href="../../problem/160" class="pid">P160</a>: <strong>Enumeration of all rooted triconnected plane triangulations with at most $n$ vertices</strong>
             </dt>
             <dd>Input: 
             An integer $n$.
@@ -175,11 +182,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             A \textit{rooted} plane triangulation is a plane triangulation with one designated vertex on the outer face.
             </dd>
-            <dd>Reference: [<a href="../../references.html#Nakano2001">Nakano2001</a>]
+            <dd>Reference: [<a href="../../references#Nakano2001">Nakano2001</a>]
             </dd>
             
             <dt class="enum_statement" id="p161">
-            <a href="../../problem/161.html" class="pid">P161</a>: <strong>Enumeration of all rooted triconnected plane triangulations with exactly $n$ vertices and $r$ leaves</strong>
+            <a href="../../problem/161" class="pid">P161</a>: <strong>Enumeration of all rooted triconnected plane triangulations with exactly $n$ vertices and $r$ leaves</strong>
             </dt>
             <dd>Input: 
             An integer $n$.
@@ -193,11 +200,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             A \textit{rooted} plane triangulation is a plane triangulation with one designated vertex on the outer face.
             </dd>
-            <dd>Reference: [<a href="../../references.html#Nakano2001">Nakano2001</a>]
+            <dd>Reference: [<a href="../../references#Nakano2001">Nakano2001</a>]
             </dd>
             
             <dt class="enum_statement" id="p162">
-            <a href="../../problem/162.html" class="pid">P162</a>: <strong>Enumeration of all triconnected plane triangulations with exactly $n$ vertices and $r$ leaves</strong>
+            <a href="../../problem/162" class="pid">P162</a>: <strong>Enumeration of all triconnected plane triangulations with exactly $n$ vertices and $r$ leaves</strong>
             </dt>
             <dd>Input: 
             An integer $n$.
@@ -211,11 +218,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             
             </dd>
-            <dd>Reference: [<a href="../../references.html#Nakano2001">Nakano2001</a>]
+            <dd>Reference: [<a href="../../references#Nakano2001">Nakano2001</a>]
             </dd>
             
             <dt class="enum_statement" id="p19">
-            <a href="../../problem/19.html" class="pid">P19</a>: <strong>Enumeration of all triangulations</strong>
+            <a href="../../problem/19" class="pid">P19</a>: <strong>Enumeration of all triangulations</strong>
             </dt>
             <dd>Input: 
             A set $S$ of $n$ points in the general position in the plane.
@@ -229,11 +236,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             Whether there is the algorithm that outputs all triangulations in constant time delay?
             </dd>
-            <dd>Reference: [<a href="../../references.html#Bespamyatnikh2002">Bespamyatnikh2002</a>]
+            <dd>Reference: [<a href="../../references#Bespamyatnikh2002">Bespamyatnikh2002</a>]
             </dd>
             
             <dt class="enum_statement" id="p170">
-            <a href="../../problem/170.html" class="pid">P170</a>: <strong>Enumeration of all biconnected plane triangulations with $n$ vertices and $r$ vertices on the outer faces</strong>
+            <a href="../../problem/170" class="pid">P170</a>: <strong>Enumeration of all biconnected plane triangulations with $n$ vertices and $r$ vertices on the outer faces</strong>
             </dt>
             <dd>Input: 
             Integers $n$ and $r$.
@@ -247,11 +254,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             
             </dd>
-            <dd>Reference: [<a href="../../references.html#Nakano2004b">Nakano2004b</a>]
+            <dd>Reference: [<a href="../../references#Nakano2004b">Nakano2004b</a>]
             </dd>
             
             <dt class="enum_statement" id="p173">
-            <a href="../../problem/173.html" class="pid">P173</a>: <strong>Enumeration of all triangulations of a triconnected plane graph of $n$ vertices</strong>
+            <a href="../../problem/173" class="pid">P173</a>: <strong>Enumeration of all triangulations of a triconnected plane graph of $n$ vertices</strong>
             </dt>
             <dd>Input: 
             A triconnected planar graph $G$ with $n$ vertices.
@@ -265,9 +272,15 @@ MathJax.Hub.Config({
             <dd>Comment: 
             
             </dd>
-            <dd>Reference: [<a href="../../references.html#Parvez2009">Parvez2009</a>]
+            <dd>Reference: [<a href="../../references#Parvez2009">Parvez2009</a>]
             </dd>
             
         </dl>
+
+        <hr />
+        <footer>
+        <p><address>Kunihiro Wasa: kunihiro.wasa[at]gmail.com</address></p>
+        <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
+        </footer>
     </body>
 </html>

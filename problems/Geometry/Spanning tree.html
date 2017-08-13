@@ -15,45 +15,52 @@ $(function(){
     });
 });
         </script>
+
         <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    skipStartupTypeset: true,
-    tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]]}, 
-    "HTML-CSS": {
+  MathJax.Hub.Config({ 
+      tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }, 
+      "HTML-CSS": {
         availableFonts: [],
         preferredFont: null,
         webFont: "Latin-Modern"
-    }
-});
-        </script>
+        }
+    });
+</script>
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
 
         <title>Problem / Geometry / Spanning tree</title>
     </head>
+    
+    
+        
+    
     <body>
-        <ul>
-            <li><a href='../../index.html'>Index</a>
-            <li><a href='../../problem_list.html'>Problem list</a>
-            
-                <ul>
-                    <li><a href='../../problems/Geometry.html'>Geometry</a>
+        <nav>
+            <ul>
+                <li><a href='../../index'>Index</a>
+                <li><a href='../../problem_list'>Problem list</a>
                 
-                        <ul>
-                            <li><a href='../../problems/Geometry/Spanning tree.html'>Spanning tree</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href='../../problems/Geometry'>Geometry</a>
+                    
+                            <ul>
+                                <li><a href='../../problems/Geometry/Spanning tree'>Spanning tree</a></li>
+                            </ul>
+                    
+                        </li>
+                    </ul>
                 
-                    </li>
-                </ul>
-            
-            </li>
-            <li><a href='../../references.html'>References</a></li>
-            <li><a href='../../dblp.html'>DBLP data</a></li>
-            
-        </ul>
-        <h2><a href="../../problems/Geometry.html">Geometry</a> / <a href="../../problems/Geometry/Spanning tree.html">Spanning tree</a></h2>
+                </li>
+                <li><a href='../../references'>References</a></li>
+                <li><a href='../../dblp'>DBLP data</a></li>
+                
+            </ul>
+        </nav>
+        
+        <h2><a href="../../problems/Geometry">Geometry</a> / <a href="../../problems/Geometry/Spanning tree">Spanning tree</a></h2>
         <dl class="problems">
             <dt class="enum_statement" id="p49">
-            <a href="../../problem/49.html" class="pid">P49</a>: <strong>Enumeration of the Euclidean $k$ best spanning trees in a plane with $n$ points</strong>
+            <a href="../../problem/49" class="pid">P49</a>: <strong>Enumeration of the Euclidean $k$ best spanning trees in a plane with $n$ points</strong>
             </dt>
             <dd>Input: 
             $n$ points in a plane
@@ -67,11 +74,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             An Euclidean spanning tree in a plane is a spanning tree of the complete graph whose vertices are all given points and the weight of an edge equal to the Euclidean distance between the corresponding vertices.
             </dd>
-            <dd>Reference: [<a href="../../references.html#Eppstein1992">Eppstein1992</a>]
+            <dd>Reference: [<a href="../../references#Eppstein1992">Eppstein1992</a>]
             </dd>
             
             <dt class="enum_statement" id="p50">
-            <a href="../../problem/50.html" class="pid">P50</a>: <strong>Enumeration of the orthogonal $k$ best spanning trees in a plane with $n$ points</strong>
+            <a href="../../problem/50" class="pid">P50</a>: <strong>Enumeration of the orthogonal $k$ best spanning trees in a plane with $n$ points</strong>
             </dt>
             <dd>Input: 
             $n$ points in a plane
@@ -85,11 +92,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             An orthogonal spanning tree in a plane is a spanning tree of the complete graph whose vertices are all given points and the weight of an edge equal to the $L_1$ distance between the corresponding vertices.
             </dd>
-            <dd>Reference: [<a href="../../references.html#Eppstein1992">Eppstein1992</a>]
+            <dd>Reference: [<a href="../../references#Eppstein1992">Eppstein1992</a>]
             </dd>
             
             <dt class="enum_statement" id="p327">
-            <a href="../../problem/327.html" class="pid">P327</a>: <strong>Enumeration of all spanning trees of a plane</strong>
+            <a href="../../problem/327" class="pid">P327</a>: <strong>Enumeration of all spanning trees of a plane</strong>
             </dt>
             <dd>Input: 
             A point set $P$.
@@ -103,11 +110,11 @@ MathJax.Hub.Config({
             <dd>Comment: 
             $N$ is the number of solutions.
             </dd>
-            <dd>Reference: [<a href="../../references.html#Avis1996">Avis1996</a>]
+            <dd>Reference: [<a href="../../references#Avis1996">Avis1996</a>]
             </dd>
             
             <dt class="enum_statement" id="p60">
-            <a href="../../problem/60.html" class="pid">P60</a>: <strong>Enumeration of the Euclidean $k$ best spanning trees in a plane with $n$ points</strong>
+            <a href="../../problem/60" class="pid">P60</a>: <strong>Enumeration of the Euclidean $k$ best spanning trees in a plane with $n$ points</strong>
             </dt>
             <dd>Input: 
             $n$ points in a plane
@@ -121,9 +128,15 @@ MathJax.Hub.Config({
             <dd>Comment: 
             An Euclidean spanning tree in a plane is a spanning tree of the complete graph whose vertices are all given points and the weight of an edge equal to the Euclidean distance between the corresponding vertices.
             </dd>
-            <dd>Reference: [<a href="../../references.html#Eppstein1997">Eppstein1997</a>]
+            <dd>Reference: [<a href="../../references#Eppstein1997">Eppstein1997</a>]
             </dd>
             
         </dl>
+
+        <hr />
+        <footer>
+        <p><address>Kunihiro Wasa: kunihiro.wasa[at]gmail.com</address></p>
+        <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
+        </footer>
     </body>
 </html>

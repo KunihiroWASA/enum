@@ -4,6 +4,9 @@ section.subgenre dt, section.subgenre dl{
 del, del > a {
     color: #ddd;
 }
+dl.problems > dt.enum_statement{
+    margin-top: 2em; 
+}
 section.genre{  
     width:100%;
     padding:10px;
