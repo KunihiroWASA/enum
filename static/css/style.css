@@ -26,12 +26,12 @@ section.subgenre {
 ol#reference > li{
     margin-bottom: 1.5em; 
 }
-ol.dblp_list {
+ol.todo_list {
     list-style-type:none; 
 }
-ol.dblp_list > li{
+ol.todo_list > li{
     margin-bottom: 1em; 
 }
-ol#dblp_list_checked strong {
+ol#todo_list_checked strong {
     text-decoration: underline; 
 }
