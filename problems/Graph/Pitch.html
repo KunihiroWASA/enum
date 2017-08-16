@@ -57,12 +57,16 @@ $(function(){
             </ul>
         </nav>
         
-        <h2><a href="../../problems/Graph">Graph</a> / <a href="../../problems/Graph/Pitch">Pitch</a></h2>
+        <h2>
+            <a href="../../problems/Graph">Graph</a> / 
+            <a href="../../problems/Graph/Pitch">Pitch</a>
+            (<a href="../../bibtex/problems/Graph/Pitch">Bibtex</a>)
+        </h2>
         <dl class="problems">
             <dt class="enum_statement" id="p200">
             <a href="../../problem/200" class="pid">P200</a>: <strong>Enumeration of all stories in a graph</strong>
             </dt>
-            <dd>Input: 
+                        <dd>Input: 
             A directed graph $G = (V, E, S, T)$ that has the set of source vertices $S$ and the set of target vertices of $T$.
             </dd>
             <dd>Output: 
@@ -74,13 +78,13 @@ $(function(){
             <dd>Comment: 
             A \textit{pitch} $P$ of $G$ is a set of arcs $E' \subseteq E$, such that the subgraph $G' =(V', E')$ of $G$, where $V' \subseteq V$ is the set of vertices of G having at least one out-going or in-coming arc in $E'$, is acyclic and for each vertex $w \in V' \setminus S$, $w$ is not a source in $G'$, and for each vertex $w \in V' \setminus T$ ,$w$ is not a target in $G'$. $P$ is a \textit{story} if $P$ is maximal.
             </dd>
-            <dd>Reference: [<a href="../../references#Acuna2012">Acuna2012</a>]
+            <dd>Reference: [<a href="../../references#Acuna2012">Acuna2012</a>] (<a href="../../bibtex/Acuna2012">Bibtex</a>)
             </dd>
             
             <dt class="enum_statement" id="p16">
             <a href="../../problem/16" class="pid">P16</a>: <strong>Enumeration of all pitches</strong>
             </dt>
-            <dd>Input: 
+                        <dd>Input: 
             A directed graph $G = (V, E, S, T)$ that has the set of source vertices $S$ and the set of target vertices of $T$.
             </dd>
             <dd>Output: 
@@ -92,7 +96,7 @@ $(function(){
             <dd>Comment: 
             A pitch $P$ of $G$ is a set of arcs $E' \subseteq E$, such that the subgraph $G' =(V', E')$ of $G$, where $V' \subseteq V$ is the set of vertices of G having at least one out-going or in-coming arc in $E'$, is acyclic and for each vertex $w \in V' \setminus S$, $w$ is not a source in $G'$, and for each vertex $w \in V' \setminus T$ ,$w$ is not a target in $G'$. Enumeration of all stories (maximal pitches) is still open.
             </dd>
-            <dd>Reference: [<a href="../../references#Borassi2013">Borassi2013</a>]
+            <dd>Reference: [<a href="../../references#Borassi2013">Borassi2013</a>] (<a href="../../bibtex/Borassi2013">Bibtex</a>)
             </dd>
             
         </dl>
