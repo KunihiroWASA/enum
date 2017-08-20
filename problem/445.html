@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+
+        <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ 
+      tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }, 
+      "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+        }
+    });
+</script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 445</title>
+    </head>
+    
+    
+        
+    
+    <body>
+        <nav>
+            <ul>
+                <li><a href='../index'>Index</a>
+                <li><a href='../problem_list'>Problem list</a>
+                
+                    <ul>
+                        <li><a href='../problems/Graph'>Graph</a>
+                    
+                            <ul>
+                                <li><a href='../problems/Graph/Spanning tree'>Spanning tree</a></li>
+                            </ul>
+                    
+                        </li>
+                    </ul>
+                
+                </li>
+                <li><a href='../references'>References</a></li>
+                <li><a href='../todo'>TODO list</a></li>
+                
+            </ul>
+        </nav>
+        
+        
+        <h2><a href="../problem/445" class="pid">P445</a>: Enumeration of all spanning trees in a graph</h2>
+                <dl class="problem">
+            <dt class="enum_statement" id="p445">
+            <a href="../problem/445" class="pid">P445</a>: <strong>Enumeration of all spanning trees in a graph</strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            Graph $G = (V, E)$.
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All spanning trees in $G$. 
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            $O(|V| + |E| + N|V|)$ total time with $O(|V|^2)$ space, where $N$ is the number of solutions. 
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            Polynomial amortized time. 
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../references#Winter1986">Winter1986</a>] (<a href="../bibtex/Winter1986">Bibtex</a>)
+            </dd>
+        </dl>
+        
+
+        <hr />
+        <footer>
+            <p><address>Last update: 2017-08-20 12:22:53 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
+            <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
+        </footer>
+    </body>
+</html>

@@ -59,27 +59,36 @@ $(function(){
         
         
         <h2><a href="../problem/135" class="pid">P135</a>: Enumeration of all cut conjunctions of a graph</h2>
-        <dl class="problems">
-                        <dd>Input: 
+                <dl class="problem">
+            <dt class="enum_statement" id="p135">
+            <a href="../problem/135" class="pid">P135</a>: <strong>Enumeration of all cut conjunctions of a graph</strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
             A graph $G = (V, E)$ and a collection $B = \{(s_1, t_1), \dots, (s_k, t_k)\}$.
             </dd>
-            <dd>Output: 
+            <dt>Output: </dt>
+            <dd>
             All cut conjunctions of $G$.
             </dd>
-            <dd>Complexity: 
+            <dt>Complexity: </dt>
+            <dd>
             $O(K^2 \log(K) |V||E|^2 + K^2|B|(|V|+|E|)|E|^2)$ total time.
             </dd>
-            <dd>Comment: 
+            <dt>Comment: </dt>
+            <dd>
             $K$ is the number of cut conjunctions.  $X$ is a cut conjunctions of $G$ if $X$ is a minimal edge set such that for all $i = 1, \dots, k$, a pair of vertices $s_i$ and $t_i$ is disconnected in $(V, E\setminus X)$.
             </dd>
-            <dd>Reference: [<a href="../references#Khachiyan2008a">Khachiyan2008a</a>] (<a href="../bibtex/Khachiyan2008a">Bibtex</a>)
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../references#Khachiyan2008a">Khachiyan2008a</a>] (<a href="../bibtex/Khachiyan2008a">Bibtex</a>)
             </dd>
         </dl>
         
 
         <hr />
         <footer>
-            <p><address>Last update: 2017-08-14 17:33:58 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
+            <p><address>Last update: 2017-08-20 12:22:53 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
             <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
         </footer>
     </body>

@@ -59,27 +59,36 @@ $(function(){
         
         
         <h2><a href="../problem/60" class="pid">P60</a>: Enumeration of the Euclidean $k$ best spanning trees in a plane with $n$ points</h2>
-        <dl class="problems">
-                        <dd>Input: 
+                <dl class="problem">
+            <dt class="enum_statement" id="p60">
+            <a href="../problem/60" class="pid">P60</a>: <strong>Enumeration of the Euclidean $k$ best spanning trees in a plane with $n$ points</strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
             $n$ points in a plane
             </dd>
-            <dd>Output: 
+            <dt>Output: </dt>
+            <dd>
             The Euclidean $k$ best spanning trees of the given points.
             </dd>
-            <dd>Complexity: 
+            <dt>Complexity: </dt>
+            <dd>
             $O(n \log n \log k + k \min(k, n)^{1/2})$ total time
             </dd>
-            <dd>Comment: 
+            <dt>Comment: </dt>
+            <dd>
             An Euclidean spanning tree in a plane is a spanning tree of the complete graph whose vertices are all given points and the weight of an edge equal to the Euclidean distance between the corresponding vertices.
             </dd>
-            <dd>Reference: [<a href="../references#Eppstein1997">Eppstein1997</a>] (<a href="../bibtex/Eppstein1997">Bibtex</a>)
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../references#Eppstein1997">Eppstein1997</a>] (<a href="../bibtex/Eppstein1997">Bibtex</a>)
             </dd>
         </dl>
         
 
         <hr />
         <footer>
-            <p><address>Last update: 2017-08-14 17:33:58 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
+            <p><address>Last update: 2017-08-20 12:22:53 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
             <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
         </footer>
     </body>

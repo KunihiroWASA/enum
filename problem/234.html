@@ -59,27 +59,36 @@ $(function(){
         
         
         <h2><a href="../problem/234" class="pid">P234</a>: Enumeration of all minimal spanning graph</h2>
-        <dl class="problems">
-                        <dd>Input: 
+                <dl class="problem">
+            <dt class="enum_statement" id="p234">
+            <a href="../problem/234" class="pid">P234</a>: <strong>Enumeration of all minimal spanning graph</strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
             A graph $G = (V, E)$, $S \subseteq V$, and requirements $r(u, v)$ for all $(u, v) \in V \times V$.
             </dd>
-            <dd>Output: 
+            <dt>Output: </dt>
+            <dd>
             All minimal spanning graph $H$ of $G$ satisfying $\lambda^S_H \ge r(u, v) \; \forall (u, v) \in V \times V$.
             </dd>
-            <dd>Complexity: 
+            <dt>Complexity: </dt>
+            <dd>
             Incremental polynomial time.
             </dd>
-            <dd>Comment: 
+            <dt>Comment: </dt>
+            <dd>
             The $S$-connectivity $\lambda^S_G(u, v)$ of $(u, v)$ in $G$ is the maximum number of $uv$-paths such that no two of them have an edge or a node in $S \setminus \{u, v\}$ in common. This complexity holds for edge-connectivity.
             </dd>
-            <dd>Reference: [<a href="../references#Nutov2009">Nutov2009</a>] (<a href="../bibtex/Nutov2009">Bibtex</a>)
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../references#Nutov2009">Nutov2009</a>] (<a href="../bibtex/Nutov2009">Bibtex</a>)
             </dd>
         </dl>
         
 
         <hr />
         <footer>
-            <p><address>Last update: 2017-08-14 17:33:58 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
+            <p><address>Last update: 2017-08-20 12:22:53 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
             <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
         </footer>
     </body>

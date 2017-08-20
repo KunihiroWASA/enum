@@ -59,27 +59,36 @@ $(function(){
         
         
         <h2><a href="../problem/331" class="pid">P331</a>: Enumeration of all partitions of an integer $n$</h2>
-        <dl class="problems">
-                        <dd>Input: 
+                <dl class="problem">
+            <dt class="enum_statement" id="p331">
+            <a href="../problem/331" class="pid">P331</a>: <strong>Enumeration of all partitions of an integer $n$</strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
             Three integers $n$, $k$, and $\sigma$.
             </dd>
-            <dd>Output: 
+            <dt>Output: </dt>
+            <dd>
             All partitions $P_\sigma(n, k)$ of $n$ into parts of size at most $k$ in which parts are congruent to $1$ modulo $\sigma$.
             </dd>
-            <dd>Complexity: 
+            <dt>Complexity: </dt>
+            <dd>
             $O(N)$ total time. E.g., $P_3(11, 8) = P_3(11, 7) = \left\{ \{7, 4\}, \{7, 1, 1, 1, 1\}, \{4, 4, 1, 1, 1\}, \{4, 1, 1, 1, 1, 1, 1, 1\}, \{1, \dots, 1\}\right\}$.
             </dd>
-            <dd>Comment: 
+            <dt>Comment: </dt>
+            <dd>
             $N$ is the number of partitions.
             </dd>
-            <dd>Reference: [<a href="../references#Rasmussen1995">Rasmussen1995</a>] (<a href="../bibtex/Rasmussen1995">Bibtex</a>)
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../references#Rasmussen1995">Rasmussen1995</a>] (<a href="../bibtex/Rasmussen1995">Bibtex</a>)
             </dd>
         </dl>
         
 
         <hr />
         <footer>
-            <p><address>Last update: 2017-08-14 17:33:58 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
+            <p><address>Last update: 2017-08-20 12:22:53 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
             <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
         </footer>
     </body>

@@ -59,27 +59,36 @@ $(function(){
         
         
         <h2><a href="../problem/145" class="pid">P145</a>: Enumeration of all biconnected based plane triangulations with $n$ vertices and $r$ vertices on the outer face</h2>
-        <dl class="problems">
-                        <dd>Input: 
+                <dl class="problem">
+            <dt class="enum_statement" id="p145">
+            <a href="../problem/145" class="pid">P145</a>: <strong>Enumeration of all biconnected based plane triangulations with $n$ vertices and $r$ vertices on the outer face</strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
             Integers $n$ and $r$.
             </dd>
-            <dd>Output: 
+            <dt>Output: </dt>
+            <dd>
             All biconnected based plane triangulations with $n$ vertices and $r$ vertices on the outer face.
             </dd>
-            <dd>Complexity: 
+            <dt>Complexity: </dt>
+            <dd>
             $O(1)$ time per based plane triangulation with $O(n)$ space.
             </dd>
-            <dd>Comment: 
+            <dt>Comment: </dt>
+            <dd>
             A \textit{based plane triangulation} is a plane triangulation with one designated edge on the outer face. The algorithm does not output entire solution but output the difference from the previous solution.
             </dd>
-            <dd>Reference: [<a href="../references#Nakano2004a">Nakano2004a</a>] (<a href="../bibtex/Nakano2004a">Bibtex</a>)
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../references#Nakano2004a">Nakano2004a</a>] (<a href="../bibtex/Nakano2004a">Bibtex</a>)
             </dd>
         </dl>
         
 
         <hr />
         <footer>
-            <p><address>Last update: 2017-08-14 17:33:58 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
+            <p><address>Last update: 2017-08-20 12:22:53 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
             <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
         </footer>
     </body>

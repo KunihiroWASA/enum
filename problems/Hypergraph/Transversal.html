@@ -62,48 +62,63 @@ $(function(){
             <a href="../../problems/Hypergraph/Transversal">Transversal</a>
             (<a href="../../bibtex/problems/Hypergraph/Transversal">Bibtex</a>)
         </h2>
-        <dl class="problems">
+        
+                    <dl class="problem">
             <dt class="enum_statement" id="p302">
             <a href="../../problem/302" class="pid">P302</a>: <strong>Enumeration of all minimal transversal of a hypergraph</strong>
             </dt>
-                        <dd>Input: 
+            <dt>Input: </dt>
+            <dd>
             A hypergraph $\mathcal{H}$.
             </dd>
-            <dd>Output: 
+            <dt>Output: </dt>
+            <dd>
             All minimal transversal of $\mathcal{H}$.
             </dd>
-            <dd>Complexity: 
+            <dt>Complexity: </dt>
+            <dd>
             $(n + N)^{O(\log n)}$ total time with $O(n \log n)$ words.
             </dd>
-            <dd>Comment: 
+            <dt>Comment: </dt>
+            <dd>
             $n = \sum_{X \in \mathcal{H}}|X|$ and $N$ is the number of solutions.
             </dd>
-            <dd>Reference: [<a href="../../references#Tamaki2000">Tamaki2000</a>] (<a href="../../bibtex/Tamaki2000">Bibtex</a>)
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Tamaki2000">Tamaki2000</a>] (<a href="../../bibtex/Tamaki2000">Bibtex</a>)
             </dd>
+        </dl>
             
+                    <dl class="problem">
             <dt class="enum_statement" id="p141">
             <a href="../../problem/141" class="pid">P141</a>: <strong>Enumeration of all minimal transversal in a hypergraph</strong>
             </dt>
-                        <dd>Input: 
+            <dt>Input: </dt>
+            <dd>
             A hypergraph $\mathcal{H}\in A(k, r)$.
             </dd>
-            <dd>Output: 
+            <dt>Output: </dt>
+            <dd>
             All minimal transversal in $\mathcal{H}$.
             </dd>
-            <dd>Complexity: 
+            <dt>Complexity: </dt>
+            <dd>
             $O(n^{k+r+1}|\mathcal{H}^d|^{r+1})$ total time and $O(N^{r+1})$ total space.
             </dd>
-            <dd>Comment: 
+            <dt>Comment: </dt>
+            <dd>
             $A(k, r)$ is the class of hyperedges with $(k, r)$-bounded intersections, i.e. in which the intersection of any $k$ distinct hyperedges has size at most $r$.  Minimal transversals of hypergraphs in some restricted classes can be enumerating in polynomial delay and space.
             </dd>
-            <dd>Reference: [<a href="../../references#Boros2004">Boros2004</a>] (<a href="../../bibtex/Boros2004">Bibtex</a>)
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Boros2004">Boros2004</a>] (<a href="../../bibtex/Boros2004">Bibtex</a>)
             </dd>
-            
         </dl>
+            
 
         <hr />
         <footer>
-            <p><address>Last update: 2017-08-14 17:33:58 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
+            <p><address>Last update: 2017-08-20 12:22:53 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
             <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
         </footer>
     </body>

@@ -62,48 +62,63 @@ $(function(){
             <a href="../../problems/Hypergraph/Acyclic subhypergraph">Acyclic subhypergraph</a>
             (<a href="../../bibtex/problems/Hypergraph/Acyclic subhypergraph">Bibtex</a>)
         </h2>
-        <dl class="problems">
+        
+                    <dl class="problem">
             <dt class="enum_statement" id="p40">
             <a href="../../problem/40" class="pid">P40</a>: <strong>Enumeration of all maximal $\alpha$-acyclic subhypergraphs in a hypergraph</strong>
             </dt>
-                        <dd>Input: 
+            <dt>Input: </dt>
+            <dd>
             A hypergraph $H = (V, \mathcal{E})$.
             </dd>
-            <dd>Output: 
+            <dt>Output: </dt>
+            <dd>
             All maximal $\alpha$-acyclic subhypergraphs in $H$.
             </dd>
-            <dd>Complexity: 
+            <dt>Complexity: </dt>
+            <dd>
             $O(|\mathcal{E}|^2(|V|+|\mathcal{E}|))$ delay and $O(|\mathcal{E}|)$space.
             </dd>
-            <dd>Comment: 
+            <dt>Comment: </dt>
+            <dd>
             The name of their algorithm is $\mathtt{GenMAS}$. This algorithm uses the algorithm $\mathtt{FindMAS}$ that outputs a maximal $\alpha$-acyclic subhypergraph.
             </dd>
-            <dd>Reference: [<a href="../../references#Daigo2009">Daigo2009</a>] (<a href="../../bibtex/Daigo2009">Bibtex</a>)
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Daigo2009">Daigo2009</a>] (<a href="../../bibtex/Daigo2009">Bibtex</a>)
             </dd>
+        </dl>
             
+                    <dl class="problem">
             <dt class="enum_statement" id="p176">
             <a href="../../problem/176" class="pid">P176</a>: <strong>Enumeration of all Berge acyclic subhypergraphs in a hypergraph</strong>
             </dt>
-                        <dd>Input: 
+            <dt>Input: </dt>
+            <dd>
             A hypergraph $\mathcal{H}$.
             </dd>
-            <dd>Output: 
+            <dt>Output: </dt>
+            <dd>
             All Berge acyclic subhypergraphs in $\mathcal{H}$.
             </dd>
-            <dd>Complexity: 
+            <dt>Complexity: </dt>
+            <dd>
             $O(rd\tau(m))$ time per subhypergraph.
             </dd>
-            <dd>Comment: 
+            <dt>Comment: </dt>
+            <dd>
             $r$ and $d$ are the rank and the degree of $\mathcal{H}$ and $\tau(m) = O((\log\log m)^2 / \log \log \log (m))$.
             </dd>
-            <dd>Reference: [<a href="../../references#Wasa2013">Wasa2013</a>] (<a href="../../bibtex/Wasa2013">Bibtex</a>)
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Wasa2013">Wasa2013</a>] (<a href="../../bibtex/Wasa2013">Bibtex</a>)
             </dd>
-            
         </dl>
+            
 
         <hr />
         <footer>
-            <p><address>Last update: 2017-08-14 17:33:58 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
+            <p><address>Last update: 2017-08-20 12:22:53 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
             <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
         </footer>
     </body>

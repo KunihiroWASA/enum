@@ -1,12 +1,37 @@
-section.subgenre dt, section.subgenre dl{
-    display:inline; 
+section.subgenre ul{
+    list-style-type: none;
+    padding-left: 0px; 
 }
+section.subgenre ul li{
+    text-align: right; 
+    display: inline-block; 
+    width: 2em; 
+}
+section.subgenre ul li a{
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
 del, del > a {
     color: #ddd;
 }
-dl.problems > dt.enum_statement{
-    margin-top: 2em; 
+dl.problem{
+    margin-top: 1em; 
+    margin-left: 1em; 
+
+    padding-left: 1em; 
+    padding-bottom : 1em; 
+    border-left: 1px solid #ccc; 
+    border-bottom : 1px solid #ccc; 
 }
+dl.problem dt  
+{
+    font-weight: bold; 
+}
+dl.problem dt.enum_statement {
+    margin-left:-.5em; 
+}
+
 section.genre{  
     width:100%;
     padding:10px;
