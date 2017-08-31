@@ -73,11 +73,11 @@ $(function(){
             </dd>
             <dt>Complexity: </dt>
             <dd>
-            $O(|V|^{3.5} + N)$.
+            $O(|V|^{3.5} + \gamma)$.
             </dd>
             <dt>Comment: </dt>
             <dd>
-            $N$ is the number of maximum cliques of $G$.  For a family $A$ of arcs on a circle, a graph $G = (V, E)$ is called the \textit{circular-arc graph} for $A$ if there exists a one-to-one correspondence between $V$ and $A$ such that two vertices in $V$ are adjacent if and only if their corresponding arcs in $A$ intersect.
+            $\gamma$ is the output size, that is the sum of the all solutions.  For a family $A$ of arcs on a circle, a graph $G = (V, E)$ is called the \textit{circular-arc graph} for $A$ if there exists a one-to-one correspondence between $V$ and $A$ such that two vertices in $V$ are adjacent if and only if their corresponding arcs in $A$ intersect.
             </dd>
             <dt>Reference: </dt>
             <dd>
@@ -88,7 +88,11 @@ $(function(){
 
         <hr />
         <footer>
-            <p><address>Last update: 2017-08-20 12:22:53 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
+            <p><address>Last update: 2017-08-27 09:43:00 
+                by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)
+                and 
+                <a href="http://www-ikn.ist.hokudai.ac.jp/~k-kurita/">Kazuhiro Kurita</a> (k-kurita[at]ist.hokudai.ac.jp)</address>
+            </p>
             <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
         </footer>
     </body>

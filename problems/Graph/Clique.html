@@ -311,15 +311,41 @@ $(function(){
             </dd>
             <dt>Complexity: </dt>
             <dd>
-            $O(|V|^{3.5} + N)$.
+            $O(|V|^{3.5} + \gamma)$.
             </dd>
             <dt>Comment: </dt>
             <dd>
-            $N$ is the number of maximum cliques of $G$.  For a family $A$ of arcs on a circle, a graph $G = (V, E)$ is called the \textit{circular-arc graph} for $A$ if there exists a one-to-one correspondence between $V$ and $A$ such that two vertices in $V$ are adjacent if and only if their corresponding arcs in $A$ intersect.
+            $\gamma$ is the output size, that is the sum of the all solutions.  For a family $A$ of arcs on a circle, a graph $G = (V, E)$ is called the \textit{circular-arc graph} for $A$ if there exists a one-to-one correspondence between $V$ and $A$ such that two vertices in $V$ are adjacent if and only if their corresponding arcs in $A$ intersect.
             </dd>
             <dt>Reference: </dt>
             <dd>
             [<a href="../../references#Kashiwabara1992">Kashiwabara1992</a>] (<a href="../../bibtex/Kashiwabara1992">Bibtex</a>)
+            </dd>
+        </dl>
+            
+                    <dl class="problem">
+            <dt class="enum_statement" id="p448">
+            <a href="../../problem/448" class="pid">P448</a>: <strong>Enumeration of all potential maximal cliques in a given graph</strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            A graph $G = (V, E)$. 
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All  potential maximal cliques in $G$. 
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            $O(n^3|\Delta_G|^3 + n^2m|\Delta_G|^2)$ total time. 
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            $\Delta_G$ is the set of all potential maximal cliques in $G$. 
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Bouchitte2002">Bouchitte2002</a>] (<a href="../../bibtex/Bouchitte2002">Bibtex</a>)
             </dd>
         </dl>
             
@@ -950,7 +976,11 @@ $(function(){
 
         <hr />
         <footer>
-            <p><address>Last update: 2017-08-20 12:22:53 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)</address></p>
+            <p><address>Last update: 2017-08-27 09:43:00 
+                by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)
+                and 
+                <a href="http://www-ikn.ist.hokudai.ac.jp/~k-kurita/">Kazuhiro Kurita</a> (k-kurita[at]ist.hokudai.ac.jp)</address>
+            </p>
             <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
         </footer>
     </body>
