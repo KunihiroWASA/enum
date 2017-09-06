@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+
+        <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ 
+      tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }, 
+      "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+        }
+    });
+</script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem: 449</title>
+    </head>
+    
+    
+        
+    
+    <body>
+        <nav>
+            <ul>
+                <li><a href='../index'>Index</a>
+                <li><a href='../problem_list'>Problem list</a>
+                
+                    <ul>
+                        <li><a href='../problems/String'>String</a>
+                    
+                            <ul>
+                                <li><a href='../problems/String/Lyndon word'>Lyndon word</a></li>
+                            </ul>
+                    
+                        </li>
+                    </ul>
+                
+                </li>
+                <li><a href='../references'>References</a></li>
+                <li><a href='../todo'>TODO list</a></li>
+                
+            </ul>
+        </nav>
+        
+        
+        <h2><a href="../problem/449" class="pid">P449</a>: Enumeration of all fixed density binary lyndon words of length $n$</h2>
+                <dl class="problem">
+            <dt class="enum_statement" id="p449">
+            <a href="../problem/449" class="pid">P449</a>: <strong>Enumeration of all fixed density binary lyndon words of length $n$</strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            Two integers $n$ and $d$. 
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All binary lyndon words of length $n$ and density $d$. 
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            $O(1)$ time per solution. 
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            Density of binary lyndon word is the number of $1$s. 
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../references#Sawada2013">Sawada2013</a>] (<a href="../bibtex/Sawada2013">Bibtex</a>)
+            </dd>
+        </dl>
+        
+
+        <hr />
+        <footer>
+            <p><address>Last update: 2017-09-06 11:49:07 
+                by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)
+                and 
+                <a href="http://www-ikn.ist.hokudai.ac.jp/~k-kurita/">Kazuhiro Kurita</a> (k-kurita[at]ist.hokudai.ac.jp)</address>
+            </p>
+            <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
+        </footer>
+    </body>
+</html>
