@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
+
+        <script>
+$(function(){
+    $('.genre').masonry({
+        itemSelector: '.subgenre',
+        isFitWidth: true,
+        isAnimated: true
+    });
+});
+        </script>
+
+        <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ 
+      tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }, 
+      "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+        }
+    });
+</script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+        <title>Problem / Geometry / Vertex</title>
+    </head>
+    
+    
+        
+    
+    <body>
+        <nav>
+            <ul>
+                <li><a href='../../index'>Index</a>
+                <li><a href='../../problem_list'>Problem list</a>
+                
+                    <ul>
+                        <li><a href='../../problems/Geometry'>Geometry</a>
+                    
+                            <ul>
+                                <li><a href='../../problems/Geometry/Vertex'>Vertex</a></li>
+                            </ul>
+                    
+                        </li>
+                    </ul>
+                
+                </li>
+                <li><a href='../../references'>References</a></li>
+                <li><a href='../../todo'>TODO list</a></li>
+                
+            </ul>
+        </nav>
+        
+        <h2>
+            <a href="../../problems/Geometry">Geometry</a> / 
+            <a href="../../problems/Geometry/Vertex">Vertex</a>
+            (<a href="../../bibtex/problems/Geometry/Vertex">Bibtex</a>)
+        </h2>
+        
+                    <dl class="problem">
+            <dt class="enum_statement" id="p467">
+            <a href="../../problem/467" class="pid">P467</a>: <strong>Enumeration of all vertices in a convex polyhedral set</strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            A convex polyhedral set $P$. 
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All vertices of $P$. 
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Balinski1961">Balinski1961</a>] (<a href="../../bibtex/Balinski1961">Bibtex</a>)
+            </dd>
+        </dl>
+            
+                    <dl class="problem">
+            <dt class="enum_statement" id="p450">
+            <a href="../../problem/450" class="pid">P450</a>: <strong>Enumerate all vertices of a convex polyhedron</strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            A convex polyhedron $X$
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All vertices of $X$. 
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            They use a linear programming. 
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Manas1968">Manas1968</a>] (<a href="../../bibtex/Manas1968">Bibtex</a>)
+            </dd>
+        </dl>
+            
+
+        <hr />
+        <footer>
+            <p><address>Last update: 2018-01-02 00:12:27 
+                by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)
+                and 
+                <a href="http://www-ikn.ist.hokudai.ac.jp/~k-kurita/">Kazuhiro Kurita</a> (k-kurita[at]ist.hokudai.ac.jp)</address>
+            </p>
+            <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
+        </footer>
+    </body>
+</html>
