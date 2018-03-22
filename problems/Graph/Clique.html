@@ -3,18 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../../static/css/style.css">
-        <script type="text/javascript" src="../../static/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="../../static/masonry.pkgd.min.js"></script>
-
-        <script>
-$(function(){
-    $('.genre').masonry({
-        itemSelector: '.subgenre',
-        isFitWidth: true,
-        isAnimated: true
-    });
-});
-        </script>
 
         <script type="text/x-mathjax-config">
   MathJax.Hub.Config({ 
@@ -973,15 +961,42 @@ $(function(){
             </dd>
         </dl>
             
+                    <dl class="problem">
+            <dt class="enum_statement" id="p470">
+            <a href="../../problem/470" class="pid">P470</a>: <strong>Enumeration of all maximal cliques in a graph</strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            Graph $G = (V, E)$. 
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All maximal cliques in $G$. 
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            $\tilde{O}(qd(\Delta + qd))$ delay with $O(q)$ space and $\tilde{O}(|E|)$ preprocessing time, or $\tilde{O}(min\{md, qd\Delta\})$ delay with $O(d)$ space and $\tilde{O}(|E|)$ preprocessing time, where $\Delta$ is the maximum degree, $d$ is the degeneracy, and $q$ is the largest clique size. 
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Conte2016">Conte2016</a>] (<a href="../../bibtex/Conte2016">Bibtex</a>)
+            </dd>
+        </dl>
+            
 
         <hr />
         <footer>
-            <p><address>Last update: 2018-02-22 10:45:56 
+            <p><address>Last update: 2018-03-22 12:53:30 
                 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)
                 and 
                 <a href="http://www-ikn.ist.hokudai.ac.jp/~k-kurita/">Kazuhiro Kurita</a> (k-kurita[at]ist.hokudai.ac.jp)</address>
             </p>
             <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
         </footer>
+        <script type="text/javascript" src="../../static/bundle.js"></script>
     </body>
 </html>

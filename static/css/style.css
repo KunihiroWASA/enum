@@ -31,21 +31,21 @@ dl.problem dt.enum_statement {
     margin-left:-.5em; 
 }
 
-section.genre{  
-    width:100%;
-    padding:10px;
-    border:1px solid #666; 
-    overflow:auto; 
-}  
+/* section.genre{   */
+    /* width:100%; */
+    /* padding:10px; */
+    /* border:1px solid #666;  */
+    /* overflow:auto;  */
+/* }   */
 
-section.subgenre {
-    width:220px;
-    margin:5px;
-    padding:10px;
-    float:left;
-    border:1px solid #999; 
-    display:inline;
-}
+/* section.subgenre { */
+    /* width:220px; */
+    /* margin:5px; */
+    /* padding:10px; */
+    /* float:left; */
+    /* border:1px solid #999;  */
+    /* display:inline; */
+/* } */
 
 ol#reference > li{
     margin-bottom: 1.5em; 
@@ -57,4 +57,25 @@ ol.todo_list > li{
     margin-bottom: 1em; 
 }
 ol#todo_list_checked strong {
+}
+
+section.genre { 
+  margin: 1%; 
+  border: 1px solid #ccc; 
+}
+
+section.subgenres{  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+section.subgenre {
+  margin: 0.25em;
+  padding: 0.5em; 
+  border: 1px solid #ccc; 
+  flex:0 1 auto; /* Default */
+  width:15em;
 }
