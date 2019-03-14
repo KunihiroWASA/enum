@@ -532,6 +532,136 @@
         </dl>
             
                     <dl class="problem">
+            <dt class="enum_statement" id="p496">
+            <a href="../../problem/496" class="pid">P496</a>: <strong>Enumeration of all minimal path-conjunctions of an undirected graph. </strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            An undirected graph $G=(V, E)$ and $\mathcal{P} = \{(s_i, t_i ) \in V \times V \mid  i \in [k] \}$. 
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All minimal path-conjunction of $G$. 
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            Incremental polynomial time. 
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            A minimal path-conjunction is a minimal set of edges $E'$ such that any pair of vertices in $\mathcal{P}$ is connected in $(V, E')$. 
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Khachiyan2007">Khachiyan2007</a>] (<a href="../../bibtex/Khachiyan2007">Bibtex</a>)
+            </dd>
+        </dl>
+            
+                    <dl class="problem">
+            <dt class="enum_statement" id="p497">
+            <a href="../../problem/497" class="pid">P497</a>: <strong>Enumeration of all minimal path-disjunctions of an undirected graph. </strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            An undirected graph $G=(V, E)$ and $\mathcal{P} = \{(s_i, t_i ) \in V \times V \mid  i \in [k] \}$. 
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All minimal path-disjunctions of $G$. 
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            Incremental polynomial time. 
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            A minimal path-disjunction is a minimal set of edges $E'$ such that some pair of vertices in $\mathcal{P}$ is connected in $(V, E')$. 
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Khachiyan2007">Khachiyan2007</a>] (<a href="../../bibtex/Khachiyan2007">Bibtex</a>)
+            </dd>
+        </dl>
+            
+                    <dl class="problem">
+            <dt class="enum_statement" id="p498">
+            <a href="../../problem/498" class="pid">P498</a>: <strong>Enumeration of all minimal path-conjunctions of a directed graph. </strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            A directed graph $G = (V, E)$ and a family of pairs $\mathcal{P} = \binom{V_1}{2} \cup \dots \cup \binom{V_p}{2}$, where $V_1, \dots, V_p$ are disjoint vertex subset of $V$.  
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All minimal path-conjunctions of $G$ with respect to $\mathcal{P}$. 
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            NP-hard. 
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            A minimal path-conjunction is a minimal set of edges $E'$ such that for all $i$, all vertices in $V_i$ belong to a connected component in $(V, E')$. 
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Khachiyan2007">Khachiyan2007</a>] (<a href="../../bibtex/Khachiyan2007">Bibtex</a>)
+            </dd>
+        </dl>
+            
+                    <dl class="problem">
+            <dt class="enum_statement" id="p499">
+            <a href="../../problem/499" class="pid">P499</a>: <strong>Enumeration of all minimal path-conjunctions of a directed graph. </strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            A directed graph $G = (V, E)$ and a family of pairs $\mathcal{P} = \{(s_1, t_1)\} \cup \{(s_2, t) \mid t \in T\}$, where $T \subseteq V$. 
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All minimal path-conjunctions of $G$. 
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            Polynomial delay. 
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            A minimal path-conjunction is a minimal set of edges $E'$ such that any pair of vertices in $\mathcal{P}$ is connected in $(V, E')$. 
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Khachiyan2007">Khachiyan2007</a>] (<a href="../../bibtex/Khachiyan2007">Bibtex</a>)
+            </dd>
+        </dl>
+            
+                    <dl class="problem">
+            <dt class="enum_statement" id="p500">
+            <a href="../../problem/500" class="pid">P500</a>: <strong>Enumeration of all minimal path-disjunctions of a directed graph. </strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            A directed graph $G = (V, E)$ and a family of pairs $\mathcal{P} = \binom{V_1}{2} \cup \dots \cup \binom{V_p}{2}$, where $V_1, \dots, V_p$ are disjoint vertex subset of $V$.  
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All minimal path-disjunctions of $G$. 
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            NP-hard. 
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            A minimal path-disjunctions is a minimal set of edges $E'$ such that for some $i$, all vertices in $V_i$ belong to a connected component in $(V, E')$. 
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../../references#Khachiyan2007">Khachiyan2007</a>] (<a href="../../bibtex/Khachiyan2007">Bibtex</a>)
+            </dd>
+        </dl>
+            
+                    <dl class="problem">
             <dt class="enum_statement" id="p10">
             <a href="../../problem/10" class="pid">P10</a>: <strong>Enumeration of all st-paths in a graph</strong>
             </dt>
@@ -690,7 +820,7 @@
 
         <hr />
         <footer>
-            <address>Last update: 2019-02-26 09:39:37 
+            <address>Last update: 2019-03-14 18:00:21 
                 by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)
                 and <a href="http://www-ikn.ist.hokudai.ac.jp/~k-kurita/">Kazuhiro Kurita</a> (k-kurita[at]ist.hokudai.ac.jp)
             </address>
