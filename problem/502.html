@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <link rel="icon" href="../favicon.ico" />
+        <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ 
+      tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }, 
+      "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+        }
+    });
+</script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+        <title>Problem: 502</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href='../index'>Index</a>
+                <li><a href='../problem_list'>Problem list</a><ul>
+                        <li><a href='../problems/Graph'>Graph</a><ul>
+                                <li><a href='../problems/Graph/Dominating set'>Dominating set</a></li>
+                            </ul></li>
+                    </ul></li>
+                <li><a href='../references'>References</a></li>
+                <li><a href='../todo'>TODO list</a></li>
+            </ul>
+        </nav>
+        
+        
+        <h2><a href="../problem/502" class="pid">P502</a>: Enumerate all minimal dominating sets in a triangle-free graph. </h2>
+                <dl class="problem">
+            <dt class="enum_statement" id="p502">
+            <a href="../problem/502" class="pid">P502</a>: <strong>Enumerate all minimal dominating sets in a triangle-free graph. </strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            A triangle-free graph $G$ with $n$ vertices. 
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All minimal dominating sets in $G$. 
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            $O(poly(n)\cdot |\mathcal{D}(G)|^2)$ total time with $O(poly(n))$ space. 
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            $\mathcal{D}(G)$ is the set of solutions. 
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../references#Bonamy2019">Bonamy2019</a>] (<a href="../bibtex/Bonamy2019">Bibtex</a>)
+            </dd>
+        </dl>
+        
+
+        <hr />
+        <footer>
+            <address>Last update: 2019-09-05 15:45:16 
+                by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)
+                and <a href="http://www-ikn.ist.hokudai.ac.jp/~k-kurita/">Kazuhiro Kurita</a> (k-kurita[at]ist.hokudai.ac.jp)
+            </address>
+            <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
+        </footer>
+        <script type="text/javascript" src="../static/bundle.js"></script>
+    </body>
+</html>
