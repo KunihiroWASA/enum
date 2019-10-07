@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <link rel="icon" href="../favicon.ico" />
+        <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ 
+      tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }, 
+      "HTML-CSS": {
+        availableFonts: [],
+        preferredFont: null,
+        webFont: "Latin-Modern"
+        }
+    });
+</script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+        <title>Problem: 514</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href='../index'>Index</a>
+                <li><a href='../problem_list'>Problem list</a><ul>
+                        <li><a href='../problems/Graph'>Graph</a><ul>
+                                <li><a href='../problems/Graph/Orientation'>Orientation</a></li>
+                            </ul></li>
+                    </ul></li>
+                <li><a href='../references'>References</a></li>
+                <li><a href='../todo'>TODO list</a></li>
+            </ul>
+        </nav>
+        
+        
+        <h2><a href="../problem/514" class="pid">P514</a>: Enumerate all the acyclic orientations of a graph</h2>
+                <dl class="problem">
+            <dt class="enum_statement" id="p514">
+            <a href="../problem/514" class="pid">P514</a>: <strong>Enumerate all the acyclic orientations of a graph</strong>
+            </dt>
+            <dt>Input: </dt>
+            <dd>
+            A graph $G=(V, E)$ and a vertex $s \in V$. 
+            </dd>
+            <dt>Output: </dt>
+            <dd>
+            All the acyclic orientations of $G$, such that $s$ is the only source.
+            </dd>
+            <dt>Complexity: </dt>
+            <dd>
+            $O(|E||V|)$ delay with $O(|E|)$ space. 
+            </dd>
+            <dt>Comment: </dt>
+            <dd>
+            
+            </dd>
+            <dt>Reference: </dt>
+            <dd>
+            [<a href="../references#Conte2018">Conte2018</a>] (<a href="../bibtex/Conte2018">Bibtex</a>)
+            </dd>
+        </dl>
+        
+
+        <hr />
+        <footer>
+            <address>Maintained 
+                by <a href="https://sites.google.com/site/kunihirowasa/">Kunihiro Wasa</a> (kunihiro.wasa[at]gmail.com)
+                and <a href="http://www-ikn.ist.hokudai.ac.jp/~k-kurita/">Kazuhiro Kurita</a> (k-kurita[at]ist.hokudai.ac.jp)
+            </address>
+            <p>Keywords: enumeration, listing, counting, polynomial delay algorithm, constant delay algorithm, constant amortized time (CAT) algorithm, incremental polynomial, output polynomial, exponential algorithm, graph, hypergraph, string, geometry, reverse search, best $k$ solutions</p>
+        </footer>
+        <script type="text/javascript" src="../static/bundle.js"></script>
+    </body>
+</html>
